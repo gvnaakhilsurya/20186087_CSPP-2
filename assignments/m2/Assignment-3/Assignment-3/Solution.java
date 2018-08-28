@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Solution {
     /**
-     * It defines the main function that deals the 
+     * It defines the main function that deals the. 
      *
      * @param      base      its's the int value
      * @param      exponent  it's the exponent value
