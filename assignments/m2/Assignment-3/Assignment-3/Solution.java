@@ -19,14 +19,12 @@ public final class Solution {
      * @return     it returns the value
      */
     public static long power(final int base, final int exponent) {
-        {
             if (exponent > 0) {
                 return  base * power(base, exponent - 1);
             } else {
                 return 1;
             }
         }
-    }
     /**.
      * It defines the main function.
      *
