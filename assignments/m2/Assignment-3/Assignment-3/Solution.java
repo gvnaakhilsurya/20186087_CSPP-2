@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Solution {
     /**
-     * { function_description }
+     * It defines the main function that deals the 
      *
      * @param      base      its's the int value
      * @param      exponent  it's the exponent value
      *
-     * @return     it returns the value 
+     * @return     it returns the value
      */
     public static int power(int base,int exponent){
        
@@ -27,7 +27,7 @@ public class Solution {
         Scanner s = new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
-        int result = power(base,exponent);
+        long result = power(base,exponent);
         System.out.println(result);
     }
     /*
