@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 /**.
  * This program is for printing quadratic equation.
  */
