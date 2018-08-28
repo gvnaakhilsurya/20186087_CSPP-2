@@ -9,7 +9,7 @@ public class Solution {
      *
      * @return     it returns the value
      */
-    public static int power(int base,int exponent){
+    public static long power(int base,int exponent){
        
         {
             if (exponent > 0)
