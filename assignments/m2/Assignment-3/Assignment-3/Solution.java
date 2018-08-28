@@ -20,12 +20,11 @@ public final class Solution {
      */
     public static long power(final int base, final int exponent) {
         {
-            if (exponent > 0){
+            if (exponent > 0) {
                 return  base * power(base, exponent - 1);
             } else {
                 return 1;
             }
-            
         }
     }
     /**.
