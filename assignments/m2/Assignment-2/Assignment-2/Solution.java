@@ -31,7 +31,8 @@ public final class Solution {
      * @param      c     { parameter_description }
      */
     public static void equation(final int a, final int b, final int c) {
-        long d = (b * b) - (4 * a * c);
+        final int x = 4;
+        long d = (b * b) - (x * a * c);
         double root1 = (-b + (Math.sqrt(Math.abs(d)))) / (2 * a);
         double root2 = (-b - (Math.sqrt(Math.abs(d)))) / (2 * a);
         System.out.println(root1 + " " + root2);
