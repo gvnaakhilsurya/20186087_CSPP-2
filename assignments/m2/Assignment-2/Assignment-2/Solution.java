@@ -2,7 +2,10 @@ import java.util.Scanner;
 /**.
  * This program is for printing quadratic equation.
  */
-final public class Solution {
+public final class Solution {
+    /**
+     * This class is for printing quadratic equation.
+     */
     private Solution() {
         /**.
          * this is constuctor
@@ -27,7 +30,7 @@ final public class Solution {
      * @param      b     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public static void equation(final int a,final int b,final int c) {
+    public static void equation(final int a, final int b, final int c) {
         long d = (b * b) - (4 * a * c);
         double root1 = (-b + (Math.sqrt(Math.abs(d)))) / (2 * a);
         double root2 = (-b - (Math.sqrt(Math.abs(d)))) / (2 * a);
