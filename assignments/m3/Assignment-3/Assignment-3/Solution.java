@@ -22,9 +22,9 @@ public class Solution {
         } else if (b == 0){
             return a;
         } else if (a > b){
-            return gcd(a%b, b);
+            return gcd(a % b, b);
         } else{
-            return gcd(a, b%a);
+            return gcd(a, b % a);
         }
     }
     public static void main(final String[] args) {
