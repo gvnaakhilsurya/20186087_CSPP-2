@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-/*
+/*.
     Do not modify this main function.
     */
 public final  class Solution {
@@ -11,7 +11,6 @@ public final  class Solution {
         /**.
          * It is a counstuctor.
          */
-
     }
     /**.
      * @param      a     { int }
