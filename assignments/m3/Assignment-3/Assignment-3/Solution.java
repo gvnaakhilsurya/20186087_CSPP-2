@@ -3,9 +3,17 @@ import java.util.Scanner;
 /*
     Do not modify this main function.
     */
-public class Solution {
+public final  class Solution {
     /**.
-     * { function_description }
+     * It explains the main class.
+     **/
+    private Solution(){
+        /**
+         * It is a counstuctor
+         */
+
+    }
+    /**
      * @param      a     { int }
      * @param      b     { int }
      *
