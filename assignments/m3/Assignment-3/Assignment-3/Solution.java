@@ -7,7 +7,7 @@ public final  class Solution {
     /**.
      * It explains the main class.
      **/
-    private Solution(){
+    private Solution() {
         /**.
          * It is a counstuctor.
          */
@@ -18,7 +18,7 @@ public final  class Solution {
      *
      * @return     { int }
      */
-    public static int gcd(final int a, final int b){
+    public static int gcd(final int a, final int b) {
         /**.
          * It is the method for GCD.
          */
