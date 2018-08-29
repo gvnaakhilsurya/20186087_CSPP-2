@@ -4,9 +4,9 @@ import java.util.Scanner;
 	Do not modify this main function.
 	*/
 public class Solution {
-	public static void counter(int x){
+	public static void counter(int n){
 		int count = 0;
-		for (int i=1 ;i <x ;i++){
+		for (int i=1 ;i <n ;i++){
 			int j = i;
 			while(j!=0){
 				int c = j%10;
@@ -18,13 +18,13 @@ public class Solution {
             }
 				
 		}
-		System.out.println(count);	 
-	
+		System.out.println(count);
 	}
     public static void main(String[] args) {
 
         Scanner s=new Scanner(System.in);      
-        int n = s.nextInt(); 
+        int n = s.nextInt();
+        counter(n);
     
 	}
 }
