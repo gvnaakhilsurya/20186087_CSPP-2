@@ -13,8 +13,12 @@ public class Solution {
 				j = j/10;
 				if (c ==7 ){
 					count = count +1;
-				}System.out.println(count);
-		}	} 
+		        }
+            
+            }
+				
+		}System.out.println(count);	 
+	
 	}
     public static void main(String[] args) {
 
