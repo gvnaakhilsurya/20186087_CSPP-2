@@ -4,7 +4,18 @@ import java.util.Scanner;
 	Do not modify this main function.
 	*/
 public class Solution {
+	/**.
+	 * { function_description }
+	 *
+	 * @param      a     { int }
+	 * @param      b     { int }
+	 *
+	 * @return     { int }
+	 */
 	public static int gcd(int a,int b){
+		/**.
+		 * It is the method for GCD.
+		 */
 		if (a==b) {
 			return a;
 		} else if (a == 0){
@@ -19,6 +30,9 @@ public class Solution {
 	}
 
     public static void main(String[] args) {
+    	/**
+    	 * .a { var_description }
+    	 */
 
         Scanner s=new Scanner(System.in);      
         int n1 = s.nextInt();
