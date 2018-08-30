@@ -16,10 +16,10 @@ class Solution {
  		for (int i : a) {
  			if (i > max) {
  				max = i;
- 			}
+ 		}
 
  		}return max;
- 	}
+ 	    }
 
  	public static void main(String[] args) {
  		/**.
@@ -34,4 +34,4 @@ class Solution {
  		 System.out.println(largenum(a));
  		 
 
-}    }
+}      }
