@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+public final class Solution {
     /**.
      * It is the definition of main class.
      *
@@ -7,7 +7,7 @@ class Solution {
      *
      * @return     int
      */
-    public static int largenum(int[] a) {
+    public static int largenum(final int[] a) {
         /**.
          * It is the method of the main class.
          */
@@ -19,7 +19,7 @@ class Solution {
         }
         }return max;
         }
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * It is main class.
          */
