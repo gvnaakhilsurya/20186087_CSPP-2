@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution{
+class Solution {
 	/**.
 	 * It is the definition of main class.
 	 *
@@ -7,14 +7,14 @@ class Solution{
 	 *
 	 * @return     int
 	 */
- 	public static int largenum(int[] a){
+ 	public static int largenum(int[] a) {
  		/**.
  		 * It is the method of the main class.
  		 */
  		int max;
  		max = a[0];
- 		for (int i : a){
- 			if (i > max){
+ 		for (int i : a) {
+ 			if (i > max) {
  				max = i;
  			}
 
@@ -28,7 +28,7 @@ class Solution{
  		Scanner sc = new Scanner(System.in);
  		int n = sc.nextInt();
  		int a[] = new int[n];
- 		for (int i = 0;i<n;i++){
+ 		for (int i = 0; i < n; i++) {
  			a[i] = sc.nextInt();
  		 }
  		 System.out.println(largenum(a));
