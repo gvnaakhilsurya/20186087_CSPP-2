@@ -1,29 +1,29 @@
 /**
- * @author : gvnaakhilsurya.
- */
+* @author : gvnaakhilsurya.
+*/
 
 import java.util.*;
 /**
- * It is the main class.
- */
+* It is the main class.
+*/
 public final class Solution {
-    /**.
-     * It is the definition of main class.
-     **/
-     private Solution(){
-        /**
-         * it is counstructor.
-         */
+/**.
+* It is the definition of main class.
+**/
+     private Solution() {
+/**
+* it is counstructor.
+*/
      }
-     /**
-     * @param      a     array
-     *
-     * @return     int
-     */
+/**
+* @param      a     array
+*
+* @return     int
+*/
     public static int largenum(final int[] a) {
-        /**.
-         * It is the method of the main class.
-         */
+/**.
+* It is the method of the main class.
+*/
         int max;
         max = a[0];
         for (int i : a) {
@@ -33,9 +33,9 @@ public final class Solution {
         }return max;
         }
     public static void main(final String[] args) {
-        /**.
-         * It is main class.
-         */
+/**.
+* It is main class.
+*/
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int a[] = new int[n];
