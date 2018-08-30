@@ -31,13 +31,16 @@ public final class Solution {
     }
     }   return max;
     }
+    /**
+     * main class.
+     *
+     * @param      variables declaration.
+     */
     public static void main(final String[] args) {
-/**.
-* It is main class.
-*/
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int [] a = new int[n];
+        int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
