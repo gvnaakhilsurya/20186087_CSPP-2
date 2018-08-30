@@ -1,7 +1,7 @@
 /**
 * @author : gvnaakhilsurya.
 */
-import java.util.*;
+import java.util.Scanner;
 /**
 * It is the main class.
 */
@@ -34,7 +34,7 @@ public final class Solution {
     /**
      * main class.
      *
-     * @param      variables declaration.
+     * @param   args  declaration.
      */
     public static void main(final String[] args) {
 
