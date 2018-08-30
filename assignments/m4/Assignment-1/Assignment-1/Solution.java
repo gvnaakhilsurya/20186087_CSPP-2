@@ -1,7 +1,6 @@
 /**
 * @author : gvnaakhilsurya.
 */
-
 import java.util.*;
 /**
 * It is the main class.
@@ -29,18 +28,18 @@ public final class Solution {
         for (int i : a) {
             if (i > max) {
                 max = i;
-        }
-        }return max;
-        }
+    }
+    }   return max;
+    }
     public static void main(final String[] args) {
 /**.
 * It is main class.
 */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a[] = new int[n];
+        int [] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
-         }
+        }
          System.out.println(largenum(a));
-}      }
+}   }
