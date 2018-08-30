@@ -1,13 +1,14 @@
 import java.util.*;
- class Solution{
- 	public static float average(int[] a){
- 		float avg;
- 		float sum = 0;
+class Solution{
+ 	public static int largenum(int[] a){
+ 		int max;
+ 		max = a[0];
  		for (int i : a){
- 			sum = sum +i;
- 		}
- 		avg = sum/a.length;
- 	return avg;	
+ 			if (i > max){
+ 				max = i;
+ 			}
+
+ 		}return max;
  	}
 
  	public static void main(String[] args) {
@@ -19,7 +20,7 @@ import java.util.*;
  		for (int i = 0;i<n;i++){
  			a[i]= sc.nextInt();
  		 }
- 		 System.out.println("Average" + average(a));
+ 		 System.out.println(largenum(a));
  		 
 
 }    }
