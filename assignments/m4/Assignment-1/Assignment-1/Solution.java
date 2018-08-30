@@ -1,8 +1,21 @@
+/**
+ * @author : gvnaakhilsurya.
+ */
+
 import java.util.*;
+/**
+ * It is the main class.
+ */
 public final class Solution {
     /**.
      * It is the definition of main class.
-     *
+     **/
+     private Solution(){
+        /**
+         * it is counstructor.
+         */
+     }
+     /**
      * @param      a     array
      *
      * @return     int
