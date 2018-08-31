@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
 * Class for solution.
 */
-class Solution {
+class  Solution {
 /**
 * It is the main class.
      *
@@ -20,14 +20,14 @@ class Solution {
 /**
 * @param      s    string.
 */
-    public static void binarytodecimal(final String s) {
+    public final  static void binarytodecimal(final String s) {
 /**
 * It is method for binary to decimal.
 */
-        long s1 = Long.parseLong(s); 
+        long s1 = Long.parseLong(s);
         long decimal = 0, i = 0;
-        while(s1 != 0) {
-            decimal += ((s1 % 10)* Math.pow(2,i));
+        while (s1 != 0) {
+            decimal += ((s1 % 10) * Math.pow(2,i));
             s1 = s1 / 10;
             i++;
 }
