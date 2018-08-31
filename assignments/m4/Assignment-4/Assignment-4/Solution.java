@@ -8,6 +8,13 @@ import java.util.Scanner;
 class Solution {
     /**
      * It is used to reverse the string.
+     **/
+    private Solution(){
+        /**
+         * It is a counstructor.
+         */
+    }
+     /*
      * @param      s    string
      *
      * @return     string
