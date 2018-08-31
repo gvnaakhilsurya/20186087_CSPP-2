@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
 * Class for solution.
 */
-class  Solution {
+final class  Solution {
 /**
 * It is the main class.
      *
@@ -25,9 +25,11 @@ class  Solution {
 * It is method for binary to decimal.
 */
         long s1 = Long.parseLong(s);
+        int VARnum1 = 10;
+         int VARnum2 = 2;
         long decimal = 0, i = 0;
         while (s1 != 0) {
-            decimal += ((s1 % 10) * Math.pow(2,i));
+            decimal += ((s1 % VARnum1) * Math.pow(VARnum2,i));
             s1 = s1 / 10;
             i++;
 }
