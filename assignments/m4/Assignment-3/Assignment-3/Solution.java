@@ -4,8 +4,8 @@
 import java.util.Scanner;
 class Solution{
 	public static void binarytodecimal(String s){
-		int s1 =Integer.parseInt(s); 
-		int decimal = 0,i = 0;
+		long s1 =Long.parseLong(s); 
+		long decimal = 0,i = 0;
 		while(s1!=0) {
 			decimal += ((s1 % 10)* Math.pow(2,i));
 			s1 = s1/10;
