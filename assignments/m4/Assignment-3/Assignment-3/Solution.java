@@ -30,7 +30,8 @@ class Solution {
             decimal += ((s1 % 10)* Math.pow(2,i));
             s1 = s1/10;
             i++;
-        }System.out.println(decimal);
+}
+        System.out.println(decimal);
 }
 /**
 * It converts the binary number to decimal.
@@ -43,7 +44,7 @@ class Solution {
 */
         Scanner sc = new Scanner(System.in);
          int n = Integer.parseInt(sc.nextLine());
-        for (int i = 0 ;i < n ;i++) {
+        for (int i = 0;i < n ;i++) {
             String s = sc.nextLine() ;
             binarytodecimal(s);
     }     
