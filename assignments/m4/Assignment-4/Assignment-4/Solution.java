@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**
      * It is used to reverse the string.
      **/
-    private Solution(){
+    private Solution() {
         /**
          * It is a counstructor.
          */
