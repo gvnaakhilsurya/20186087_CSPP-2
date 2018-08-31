@@ -20,7 +20,7 @@ final class  Solution {
 /**
 * @param      s    string.
 */
-    public final  static void binarytodecimal(final String s) {
+    public  static void binarytodecimal(final String s) {
 /**
 * It is method for binary to decimal.
 */
@@ -29,7 +29,7 @@ final class  Solution {
         final int yVAR = 2;
         long decimal = 0, i = 0;
         while (s1 != 0) {
-            decimal += ((s1 % xVAR) * Math.pow(yVAR,i));
+            decimal += ((s1 % xVAR) * Math.pow(yVAR, i));
             s1 = s1 / 10;
             i++;
 }
