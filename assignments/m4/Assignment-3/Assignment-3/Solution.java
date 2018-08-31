@@ -30,7 +30,7 @@ final class  Solution {
         long decimal = 0, i = 0;
         while (s1 != 0) {
             decimal += ((s1 % xVAR) * Math.pow(yVAR, i));
-            s1 = s1 / 10;
+            s1 = s1 / xVAR;
             i++;
 }
         System.out.println(decimal);
