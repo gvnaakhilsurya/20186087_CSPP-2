@@ -48,7 +48,7 @@ final class Solution {
         }
 
 } else {
-        System.out.println("In valid");
+        System.out.println("not possible");
     }
     }
 }
