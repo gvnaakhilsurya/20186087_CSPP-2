@@ -25,7 +25,7 @@ public final class Solution {
          * s = string input to yhe function.
          */
         String x = "";
-        for(int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             x = s.charAt(i) + x;
     }
         return x;
