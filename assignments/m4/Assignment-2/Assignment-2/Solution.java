@@ -2,7 +2,9 @@ import java.util.Scanner;
 /**. main class.
 */
 final class Solution {
-    /**.addition of matrices*/
+    /**.
+     *addition of matrices
+     */
     private Solution() {
         /**.
         it is constructor.
