@@ -25,8 +25,8 @@ final class  Solution {
 * It is method for binary to decimal.
 */
         long s1 = Long.parseLong(s);
-        int VARnuma = 10;
-        int VARnumb = 2;
+        final int VARnuma = 10;
+        final int VARnumb = 2;
         long decimal = 0, i = 0;
         while (s1 != 0) {
             decimal += ((s1 % VARnuma) * Math.pow(VARnumb,i));
