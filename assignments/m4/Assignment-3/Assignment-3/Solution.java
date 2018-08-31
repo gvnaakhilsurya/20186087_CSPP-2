@@ -7,7 +7,7 @@ class Solution{
 		int s1 =Integer.parseInt(s); 
 		int decimal = 0,i = 0;
 		while(s1!=0) {
-			decimal += ((s1%10)*Math.pow(2,i));
+			decimal += ((s1 % 10)* Math.pow(2,i));
 			s1 = s1/10;
 			i++;
 		}System.out.println(decimal);
@@ -19,7 +19,7 @@ class Solution{
 		int n = Integer.parseInt(sc.nextLine());
 		for(int i = 0 ;i<n;i++){
 			String s = sc.nextLine();
-			 binarytodecimal(s);
+			binarytodecimal(s);
 		}
 		
 
