@@ -1,7 +1,6 @@
 /**
  * @author:gvnaakhilsurya
  */
-
 // Given an String, Write a java method that returns the decimal value for the given binary string.
 import java.util.Scanner;
 /**
@@ -32,7 +31,6 @@ class Solution {
             s1 = s1/10;
             i++;
         }System.out.println(decimal);
-
     }
     /**
      * It converts the binary number to decimal.
@@ -47,9 +45,8 @@ class Solution {
         Scanner sc = new Scanner(System.in);
          int n = Integer.parseInt(sc.nextLine());
         for (int i = 0 ; i < n ; i++) {
-            String s = sc.nextLine();
+            String s = sc.nextLine() ;
             binarytodecimal(s);
-    }
-        
+    }     
     }
 }
