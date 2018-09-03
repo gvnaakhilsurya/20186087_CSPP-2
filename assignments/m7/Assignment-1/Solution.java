@@ -1,21 +1,20 @@
 import java.util.Scanner;
-/**
+/**.
  * It is the class.
  */
 class InputValidator {
-    /**
+    /**.
      * It is attributes declaration.
      */
-    String input;
-    InputValidator(String input) {
-    
-        /**
+    private String input;
+    InputValidator(final String input) {
+        /**.
          * It is counstructor.
          */
         this.input = input;
     }
-    boolean validateData() {
-        /**
+    Boolean validateData() {
+        /**.
          * It is the conditional method.
          */
         if (input.length() >= 6) {
@@ -26,19 +25,19 @@ class InputValidator {
     }
 }
 public final class Solution {
-    /**
+    /**.
      * Constructs the object.
      */
     private  Solution() {
-        /**
+        /**.
          * It is counstructor.
          */
     }
-    /**
+    /**.
      * It is the main class.
      */
     public static void main(final String args[]) {
-        /**
+        /**.
          * It is the main class description.
          */
         Scanner s = new Scanner(System.in);
