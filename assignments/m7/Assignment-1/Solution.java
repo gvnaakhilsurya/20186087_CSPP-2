@@ -7,6 +7,11 @@ class InputValidator {
      * It is attributes declaration.
      */
     private String input;
+    /**.
+     * Constructs the object.
+     *
+     * @param      input  The input
+     */
     InputValidator(final String input) {
         /**.
          * It is counstructor.
