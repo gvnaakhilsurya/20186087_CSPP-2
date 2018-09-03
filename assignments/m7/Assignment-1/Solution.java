@@ -18,17 +18,24 @@ class InputValidator {
          */
         this.input = input;
     }
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     Boolean validateData() {
         /**.
          * It is the conditional method.
          */
         if (input.length() >= 6) {
             return true;
-    }    else {
-            return false;
         }
+        return false;
     }
 }
+/**.
+ * { item_description }
+ */
 public final class Solution {
     /**.
      * Constructs the object.
