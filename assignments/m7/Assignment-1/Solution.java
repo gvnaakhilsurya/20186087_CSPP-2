@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 /**
  * It is the class.
  */
@@ -8,6 +8,7 @@ class InputValidator
      * It is attributes ddeclaration.
      */
     String input;
+    
     InputValidator(String input)
     {
         /**
