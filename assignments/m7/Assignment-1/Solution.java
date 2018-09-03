@@ -2,22 +2,22 @@ import java.util.Scanner;
 /**
  * It is the class.
  */
-class InputValidator
-{
+class InputValidator {
+
     /**
-     * It is attributes ddeclaration.
+     * It is attributes declaration.
      */
     String input;
 
-    InputValidator(String input)
-    {
+    InputValidator(String input) {
+    
         /**
          * It is counstructor.
          */
         this.input = input;
     }
-    boolean validateData()
-    {
+    boolean validateData() {
+    
         /**
          * It is the conditional method.
          */
@@ -42,7 +42,7 @@ public final class Solution
     /**
      * It is the main class.
      */
-    public static void main(final String args [])
+    public static void main(final String args[])
     {
         /**
          * It is the main class description.
