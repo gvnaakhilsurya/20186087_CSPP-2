@@ -3,12 +3,10 @@ import java.util.Scanner;
  * It is the class.
  */
 class InputValidator {
-
     /**
      * It is attributes declaration.
      */
     String input;
-
     InputValidator(String input) {
     
         /**
@@ -17,7 +15,6 @@ class InputValidator {
         this.input = input;
     }
     boolean validateData() {
-    
         /**
          * It is the conditional method.
          */
@@ -29,12 +26,10 @@ class InputValidator {
     }
 }
 public final class Solution {
-
     /**
      * Constructs the object.
      */
     private  Solution() {
-    
         /**
          * It is counstructor.
          */
@@ -43,7 +38,6 @@ public final class Solution {
      * It is the main class.
      */
     public static void main(final String args[]) {
-    
         /**
          * It is the main class description.
          */
