@@ -28,13 +28,13 @@ class InputValidator {
         }
     }
 }
-public final class Solution
-{
+public final class Solution {
+
     /**
      * Constructs the object.
      */
-    private  Solution()
-    {
+    private  Solution() {
+    
         /**
          * It is counstructor.
          */
@@ -42,8 +42,8 @@ public final class Solution
     /**
      * It is the main class.
      */
-    public static void main(final String args[])
-    {
+    public static void main(final String args[]) {
+    
         /**
          * It is the main class description.
          */
