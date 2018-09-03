@@ -20,7 +20,7 @@ class InputValidator
          */
         if (input.length() >= 6) {
             return true;    
-        }else {
+    }    else {
             return false;
         }
     }
@@ -30,7 +30,7 @@ public class Solution
     /**
      * It is the main class.
      */
-    public static void main(String args[])
+    public static void main(final String args [])
     {
         /**
          * It is the main class description.
