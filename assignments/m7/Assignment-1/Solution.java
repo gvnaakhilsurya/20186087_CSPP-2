@@ -8,7 +8,7 @@ class InputValidator
      * It is attributes ddeclaration.
      */
     String input;
-    
+
     InputValidator(String input)
     {
         /**
@@ -22,14 +22,17 @@ class InputValidator
          * It is the conditional method.
          */
         if (input.length() >= 6) {
-            return true;    
+            return true;
     }    else {
             return false;
         }
     }
 }
-public class Solution
+public final class Solution
 {
+    /**
+     * Constructs the object.
+     */
     private  Solution()
     {
         /**
@@ -48,7 +51,5 @@ public class Solution
         String input = s.next();
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
-
 }
-
 }
