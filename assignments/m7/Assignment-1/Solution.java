@@ -12,11 +12,11 @@ class InputValidator {
      *
      * @param      input  The input
      */
-    InputValidator(final String input) {
+    InputValidator(final String input_) {
         /**.
          * It is counstructor.
          */
-        this.input = input;
+        this.input = input_;
     }
     /**.
      * { function_description }
