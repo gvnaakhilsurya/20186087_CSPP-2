@@ -1,10 +1,12 @@
 import java.util.*;
+/**
+ * It is the class.
+ */
 class InputValidator
 {
     /**
      * It is attributes ddeclaration.
      */
-    int length;
     String input;
     InputValidator(String input)
     {
@@ -27,6 +29,12 @@ class InputValidator
 }
 public class Solution
 {
+    private  Solution()
+    {
+        /**
+         * It is counstructor.
+         */
+    }
     /**
      * It is the main class.
      */
