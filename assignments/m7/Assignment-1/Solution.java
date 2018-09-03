@@ -6,7 +6,7 @@ class InputValidator {
     /**.
      * It is attributes declaration.
      */
-    private String input;
+    private String data;
     /**.
      * Constructs the object.
      *
@@ -16,7 +16,7 @@ class InputValidator {
         /**.
          * It is counstructor.
          */
-        this.input = input;
+        this.data = input;
     }
     /**.
      * { function_description }
@@ -28,7 +28,7 @@ class InputValidator {
          * It is the conditional method.
          */
         final int six = 6;
-        if (input.length() >= six) {
+        if (data.length() >= six) {
             return true;
         }
         return false;
