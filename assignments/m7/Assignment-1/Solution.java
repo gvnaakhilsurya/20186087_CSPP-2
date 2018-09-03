@@ -18,9 +18,9 @@ class InputValidator
         /**
          * It is the conditional method.
          */
-        if (input.length() >= 6){
+        if (input.length() >= 6) {
             return true;    
-        }else{
+        }else {
             return false;
         }
     }
@@ -40,6 +40,6 @@ public class Solution
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
 
-    }
+}
 
 }
