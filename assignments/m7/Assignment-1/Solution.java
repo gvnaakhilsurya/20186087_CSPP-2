@@ -34,9 +34,11 @@ public final class Solution {
          */
     }
     /**.
-     * It is the main class.
+     * { function_description }
+     *
+     * @param      args  The arguments
      */
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         /**.
          * It is the main class description.
          */
