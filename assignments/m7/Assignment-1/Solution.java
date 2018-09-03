@@ -27,7 +27,8 @@ class InputValidator {
         /**.
          * It is the conditional method.
          */
-        if (input.length() >= 6) {
+        final int six = 6;
+        if (input.length() >= six) {
             return true;
         }
         return false;
