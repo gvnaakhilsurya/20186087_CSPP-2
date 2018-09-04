@@ -151,7 +151,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        for(int i = 0;i<this.size-1;i++){
+        for(int i = 0;i<this.size;i++){
             if (this.a[index] == this.a[i])
                 return this.a[i];
         }
