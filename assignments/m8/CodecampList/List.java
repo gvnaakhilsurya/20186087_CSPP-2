@@ -171,7 +171,11 @@ public class List {
      */
     public String toString() {
         // Replace the code below
-        return "print the list";
+        String str = "[";
+        for(int i =0;i<this.size-1;i++){
+            str +=a[i] + "]";
+        }
+        return str +a[this.size - 1] + "]";
     } 
     
     /*
