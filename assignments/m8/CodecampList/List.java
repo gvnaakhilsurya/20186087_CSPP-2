@@ -26,7 +26,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-     private int[] a;
+      private int[] a;
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -49,7 +49,7 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
-     private int size;
+      private int size;
 
     // declare a private int size
     // again, don't initialize it here
@@ -72,7 +72,8 @@ public class List {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        this.a = new int[10];
+        final int ten = 10;
+        this.a = new int[ten];
         this.size = size;
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
