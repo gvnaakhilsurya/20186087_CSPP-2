@@ -173,7 +173,7 @@ public class List {
         // Replace the code below
         String str = "[";
         for(int i =0;i<this.size-1;i++){
-            str +=a[i] + ", ";
+            str +=a[i] + ",";
         }
         return str +a[this.size - 1] + "]";
     } 
