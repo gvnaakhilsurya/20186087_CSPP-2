@@ -148,8 +148,8 @@ public class List {
          * It is the function to remove the element in the list.
          */
         if (index < this.size) {
-            for (int i = index; i<this.size -1; i++) {
-                a[i] = a[i+1];
+            for (int i = index; i < this.size -1; i++) {
+                a[i] = a[i + 1];
             }
             this.size --;
             a[this.size] = 0;
