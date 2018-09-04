@@ -1,9 +1,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
 public class List {
-	//Implement all the methods mentioned to build a ListADT
-
+    //Implement all the methods mentioned to build a ListADT
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -59,6 +57,9 @@ public class List {
      * class variables with some default values.
      */
     public List() {
+        /**
+         * { item_description }
+         */
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
@@ -86,9 +87,11 @@ public class List {
      * The method returns void (nothing)
      */
     public void add(int item) {
-        //Inserts the specified element at the end of the list.
+        /**.
+         * { item_description }
+         */
         this.a[this.size] = item;
-        this.size++;
+        this.size ++;
     }
 
     /*
@@ -99,7 +102,9 @@ public class List {
      * The method returns an int. Empty list should return 0.
      */
     public int size() {
-        // replace the code below to implement the size method
+        /**.
+         * { item_description }
+         */
         return this.size;
     }
 
@@ -124,8 +129,9 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        // write the logic for remove here.
-        // Think about what to do to the size variable.
+        /**.
+         * { item_description }
+         */
         if(index<this.size) {
             for(int i = index;i < this.size - 1;i++) {
                 a[i] = a[i+1];
@@ -150,7 +156,10 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
-        // Replace the code below to write the code for get
+        /**.
+         * { item_description }
+         */
+        
         for(int i = 0;i<this.size;i++){
             if (this.a[index] == this.a[i])
                 return this.a[i];
@@ -179,10 +188,13 @@ public class List {
      *
      */
     public String toString() {
-        // Replace the code below
+        /**.
+         * { var_description }
+         */
+        
         String str = "[";
-        for(int i =0;i<this.size-1;i++){
-            str +=a[i] + ",";
+        for(int i =0;i < this.size - 1;i++){
+            str += a[i] + ",";
         }
         return str +a[this.size - 1] + "]";
     } 
@@ -194,6 +206,9 @@ public class List {
      * the item exists and otherwise false
      */
     public boolean contains(int item) {
+        /**.
+         * { item_description }
+         */
         for(int i :a){
             if(item == i)
                 return true;
@@ -207,15 +222,18 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        // Replace the code below
-        for(int i = 0;i<this.size;i++){
+        /**.
+         * { item_description }
+         */
+      
+        for(int i = 0;i < this.size;i ++){
             if (item == a[i])
                 return i ;
         }
         return -1;
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -258,5 +276,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
