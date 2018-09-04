@@ -160,7 +160,7 @@ public class List {
          * { item_description }
          */
         
-        for(int i = 0;i<this.size;i++){
+        for(int i = 0; i<this.size; i++){
             if (this.a[index] == this.a[i])
                 return this.a[i];
         }
@@ -176,7 +176,6 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -193,7 +192,7 @@ public class List {
          */
         
         String str = "[";
-        for(int i=0; i < this.size - 1; i ++){
+        for(int i = 0; i <this.size - 1; i++) {
             str += a[i] + ",";
         }
         return str + a[this.size - 1] + "]";
