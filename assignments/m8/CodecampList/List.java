@@ -87,7 +87,7 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
-        a[this.size] = item;
+        this.a[this.size] = item;
         this.size++;
     }
 
@@ -143,8 +143,8 @@ public class List {
     public int get(int index) {
         // Replace the code below to write the code for get
         for(int i = 0;i<this.size;i++){
-            if (a[index] == a[i])
-                return a[i];
+            if (this.a[index] == this.a[i])
+                return this.a[i];
         }
         return -1;
     }
