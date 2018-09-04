@@ -126,7 +126,16 @@ public class List {
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        
+        if(index<this.size) {
+            for(int i = index;i < this.size - 1;i++) {
+
+            }
+            this.size --;
+            a[this.size] = 0;   
+        }else {
+            System.out.println("Invalid Position Exception");
+
+        } 
     }
 
     /*
