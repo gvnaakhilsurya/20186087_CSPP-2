@@ -160,7 +160,7 @@ public class List {
          * It get the elemnt in the list by giving the index value.
          */
         
-        for(int i = 0; i<this.size; i++) {
+        for (int i = 0; i<this.size; i++) {
             if (this.a[index] == this.a[i])
                 return this.a[i];
         }
@@ -192,7 +192,7 @@ public class List {
          */
         
         String str = "[";
-        for(int i = 0; i <this.size - 1; i++) {
+        for (int i = 0; i<this.size - 1; i++) {
             str += a[i] + ",";
         }
         return str + a[this.size - 1] + "]";
