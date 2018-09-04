@@ -26,6 +26,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
+    /**. @a array */
       private int[] a;
     // declare a private int[]
     // don't create the array yet using new
@@ -49,6 +50,7 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
+    /**. @a size */
       private int size;
 
     // declare a private int size
