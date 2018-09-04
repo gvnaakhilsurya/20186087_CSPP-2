@@ -26,7 +26,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    private int a [];
+    private int[] a;
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -99,7 +99,7 @@ public class List {
          * This method for adding the elements into the list.
          */
         this.a[this.size] = item;
-        this.size ++;
+        this.size++;
     }
     /*
      * The size method returns the value of the size.
@@ -147,8 +147,8 @@ public class List {
         /**.
          * It is the function to remove the element in the list.
          */
-        if(index<this.size) {
-            for (int i = index; i<this.size - 1;i++) {
+        if (index < this.size) {
+            for (int i = index; i<this.size -1; i++) {
                 a[i] = a[i+1];
             }
             this.size --;
@@ -180,8 +180,9 @@ public class List {
          * It get the elemnt in the list by giving the index value.
          */
         for (int i = 0; i<this.size; i++) {
-            if (this.a[index] == this.a[i])
+            if (this.a[index] == this.a[i]){
                 return this.a[i];
+            }
         }
         return -1;
     }
@@ -239,8 +240,9 @@ public class List {
          *  is present or not in it.
          */
         for (int i : a) {
-            if(item == i)
+            if(item == i){
                 return true;
+            }
         }
         return false;
     }
