@@ -193,10 +193,10 @@ public class List {
          */
         
         String str = "[";
-        for(int i =0;i < this.size - 1;i++){
+        for(int i=0; i < this.size - 1; i ++){
             str += a[i] + ",";
         }
-        return str +a[this.size - 1] + "]";
+        return str + a[this.size - 1] + "]";
     } 
     
     /*
@@ -209,7 +209,7 @@ public class List {
         /**.
          * { item_description }
          */
-        for(int i :a){
+        for(int i : a){
             if(item == i)
                 return true;
         }
@@ -226,7 +226,7 @@ public class List {
          * { item_description }
          */
       
-        for(int i = 0;i < this.size;i ++){
+        for(int i = 0; i < this.size; i ++){
             if (item == a[i])
                 return i ;
         }
