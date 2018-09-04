@@ -109,7 +109,6 @@ public class List {
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
      * The method returns an int. Empty list should return 0.
      */
     /**.
@@ -128,7 +127,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -269,7 +268,7 @@ public class List {
      */
     public int indexOf(final int item) {
         /**.
-         * This is the method for returning the index value. 
+         * This is the method for returning the index value.
          */
         for (int i = 0; i < this.size; i++) {
             if (item == a[i]) {
