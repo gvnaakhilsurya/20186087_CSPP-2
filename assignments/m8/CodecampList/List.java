@@ -208,7 +208,7 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for(int i = 0;i<this.size-1;i++){
+        for(int i = 0;i<this.size;i++){
             if (item == a[i])
                 return i ;
         }
