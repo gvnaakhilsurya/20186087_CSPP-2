@@ -47,9 +47,10 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
     private int size;
+
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -151,10 +152,10 @@ public class List {
                 a[i] = a[i+1];
             }
             this.size --;
-            a[this.size] = 0;   
+            a[this.size] = 0;
         }else {
             System.out.println("Invalid Position Exception");
-        } 
+        }
     }
     /*
      * Get method has to return the items that is
@@ -164,7 +165,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     /**
@@ -178,7 +179,6 @@ public class List {
         /**.
          * It get the elemnt in the list by giving the index value.
          */
-        
         for (int i = 0; i<this.size; i++) {
             if (this.a[index] == this.a[i])
                 return this.a[i];
@@ -213,7 +213,6 @@ public class List {
         /**.
          * It makes the elements into the string.
          */
-        
         String str = "[";
         for (int i = 0; i<this.size - 1; i++) {
             str += a[i] + ",";
@@ -226,7 +225,8 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    /**
+
+    /**.
      * { function_description }
      *
      * @param      item  The item
