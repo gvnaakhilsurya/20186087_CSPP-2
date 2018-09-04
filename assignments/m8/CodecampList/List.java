@@ -128,7 +128,7 @@ public class List {
         // Think about what to do to the size variable.
         if(index<this.size) {
             for(int i = index;i < this.size - 1;i++) {
-
+                a[i] = a[i+1];
             }
             this.size --;
             a[this.size] = 0;   
