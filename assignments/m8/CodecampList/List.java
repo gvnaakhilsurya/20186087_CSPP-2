@@ -1,5 +1,8 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
+/**.
+ * List of .
+ */
 public class List {
     //Implement all the methods mentioned to build a ListADT
     /*
@@ -56,6 +59,9 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    /**.
+     * Constructs the object.
+     */
     public List() {
         /**
          * It is the counstructor.
@@ -86,6 +92,11 @@ public class List {
      * 
      * The method returns void (nothing)
      */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     */
     public void add(final int item) {
         /**.
          * This method for adding the elements into the list.
@@ -100,6 +111,11 @@ public class List {
      * to the objects outside the list
      * 
      * The method returns an int. Empty list should return 0.
+     */
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         /**.
@@ -128,6 +144,11 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     */
     public void remove(final int index) {
         /**.
          * It is the function to remove the element in the list.
@@ -154,6 +175,13 @@ public class List {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
+     */
+    /**
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
      */
     public int get(final int index) {
         /**.
@@ -186,6 +214,11 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         /**.
          * It makes the elements into the string.
@@ -203,12 +236,19 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final int item) {
         /**.
          * It retains the acknowlwdgwment whether the element
          *  is present or not in it.
          */
-        for(int i : a) {
+        for (int i : a) {
             if(item == i)
                 return true;
         }
@@ -220,19 +260,29 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
+    /**.
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int indexOf(final int item) {
         /**.
          * This is the method for returning the index value. 
          */
-      
-        for(int i = 0; i < this.size; i++) {
+        for (int i = 0; i < this.size; i++) {
             if (item == a[i]) {
                 return i;
             }
         }
         return -1;
     }
-
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         /**.
          * This is the main function.
