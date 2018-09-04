@@ -26,11 +26,10 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    private int a[];
+    private int a [];
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -78,9 +77,7 @@ public class List {
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
-
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -89,7 +86,6 @@ public class List {
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     * 
      * The method returns void (nothing)
      */
     /**.
@@ -104,7 +100,6 @@ public class List {
         this.a[this.size] = item;
         this.size ++;
     }
-
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
@@ -122,7 +117,6 @@ public class List {
          */
         return this.size;
     }
-
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
@@ -160,10 +154,8 @@ public class List {
             a[this.size] = 0;   
         }else {
             System.out.println("Invalid Position Exception");
-
         } 
     }
-
     /*
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
@@ -193,7 +185,6 @@ public class List {
         }
         return -1;
     }
-
     /*
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
@@ -253,7 +244,6 @@ public class List {
         }
         return false;
     }
-
     /*
      * Returns the index of the first occurrence
      * of the specified element in this list,
