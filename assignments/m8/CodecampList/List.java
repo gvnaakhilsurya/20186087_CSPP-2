@@ -58,7 +58,7 @@ public class List {
      */
     public List() {
         /**
-         * { item_description }
+         * It is the counstructor.
          */
 
         // what are the two variables to be initialized here?
@@ -88,7 +88,7 @@ public class List {
      */
     public void add(final int item) {
         /**.
-         * { item_description }
+         * This method for adding the elements into the list.
          */
         this.a[this.size] = item;
         this.size ++;
@@ -103,7 +103,7 @@ public class List {
      */
     public int size() {
         /**.
-         * { item_description }
+         * This  method is for size of list.
          */
         return this.size;
     }
@@ -130,7 +130,7 @@ public class List {
      */
     public void remove(final int index) {
         /**.
-         * { item_description }
+         * It is the function to remove the element in the list.
          */
         if(index<this.size) {
             for(int i = index;i < this.size - 1;i++) {
@@ -157,10 +157,10 @@ public class List {
      */
     public int get(final int index) {
         /**.
-         * { item_description }
+         * It get the elemnt in the list by giving the index value.
          */
         
-        for(int i = 0; i<this.size; i++){
+        for(int i = 0; i<this.size; i++) {
             if (this.a[index] == this.a[i])
                 return this.a[i];
         }
@@ -188,7 +188,7 @@ public class List {
      */
     public String toString() {
         /**.
-         * { var_description }
+         * It makes the elements into the string.
          */
         
         String str = "[";
@@ -206,9 +206,10 @@ public class List {
      */
     public boolean contains(final int item) {
         /**.
-         * { item_description }
+         * It retains the acknowlwdgwment whether the element
+         *  is present or not in it.
          */
-        for(int i : a){
+        for(int i : a) {
             if(item == i)
                 return true;
         }
@@ -216,24 +217,27 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
     public int indexOf(final int item) {
         /**.
-         * { item_description }
+         * This is the method for returning the index value. 
          */
       
-        for(int i = 0; i < this.size; i ++){
-            if (item == a[i])
-                return i ;
+        for(int i = 0; i < this.size; i++) {
+            if (item == a[i]) {
+                return i;
+            }
         }
         return -1;
     }
 
     public static void main(final String[] args) {
-        // create an object of the list to invoke methods on it
+        /**.
+         * This is the main function.
+         */
         List l = new List();
 
         // code to read the test cases input file
