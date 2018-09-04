@@ -142,7 +142,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        for(int i = 0;i<this.size;i++){
+        for(int i = 0;i<this.size-1;i++){
             if (this.a[index] == this.a[i])
                 return this.a[i];
         }
@@ -195,7 +195,7 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for(int i = 0;i<this.size;i++){
+        for(int i = 0;i<this.size-1;i++){
             if (item == a[i])
                 return i ;
         }
