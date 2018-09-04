@@ -79,6 +79,9 @@ public class List {
         // An empty list has how many items?
         // That is the initial value to use for size.
     }
+    /**.
+     * { item_description }
+     */
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -101,6 +104,9 @@ public class List {
         this.a[this.size] = item;
         this.size++;
     }
+    /**.
+     * { item_description }
+     */
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
