@@ -148,12 +148,12 @@ public class List {
          * It is the function to remove the element in the list.
          */
         if (index < this.size) {
-            for (int i = index; i < this.size -1; i++) {
+            for (int i = index; i < this.size - 1; i++) {
                 a[i] = a[i + 1];
             }
-            this.size --;
+            this.size--;
             a[this.size] = 0;
-        }else {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -168,7 +168,7 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      index  The index
@@ -269,7 +269,7 @@ public class List {
         }
         return -1;
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
