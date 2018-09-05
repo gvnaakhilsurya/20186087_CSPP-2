@@ -28,26 +28,17 @@ public class Fibonacci
      */
     public static List fib(int n) {
         List fibo = new List();
-        if(n == 0){
-            fibo.add(0);
-        }else if (n==1){
-            fibo.add(0);
-            fibo.add(1);
-        }else {
-            fibo.add(0);
-            fibo.add(1);
-            fibo.add(1);
-            int n1 = 1;
-            int n2 = 1;
-            int fibno = 1;
-            for(int i = 3;i<=n;i++) {
-                fibno = n1 + n2;
-                n1 = n2;
-                n2 = fibno;
-                fibo.add(fibno);
+        int element1=0;
+        int element2 =1;
+        int temp=0;
+        fibo.add(element1);
+        fibo.add(element2);
+        for(int j=2;j<n;j++)
+        {
+            temp = fibo.get(j-1)+fibo.get(j-2);
+            fibo.add(temp);
         }
-
-        }return fibo;
+        return fibo;
         
     }
 
