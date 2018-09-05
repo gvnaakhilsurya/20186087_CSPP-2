@@ -15,6 +15,9 @@ import java.util.Scanner;
  * by invoking the add method provided in the List ADT.
  *
  */
+/**.
+ * Class for fibonacci.
+ */
 public class Fibonacci
 {
     /**.
@@ -32,9 +35,16 @@ public class Fibonacci
      *
      * Look for the hint.txt if some of the testcases fail.
      */
+    /**.
+     * { function_description }
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static List fib(final int n) {
         /**.
-         * { var_description }
+         * it is the main class.
          */
         List fibo = new List(n);
         int element1 = 0;
@@ -55,7 +65,7 @@ public class Fibonacci
      * @param      args  The arguments
      */
 
-	public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { var_description }
          */
