@@ -18,7 +18,7 @@ import java.util.Scanner;
 /**.
  * Class for fibonacci.
  */
-public class Fibonacci
+public final  class Fibonacci
 {
     /**.
      * { item_description }
@@ -49,12 +49,12 @@ public class Fibonacci
         List fibo = new List(n);
         int element1 = 0;
         int element2 = 1;
-        int temp=0;
+        int temp = 0;
         fibo.add(element1);
         fibo.add(element2);
         for(int j = 2; j < n; j++)
         {
-            temp = fibo.get(j-1) + fibo.get(j-2);
+            temp = fibo.get(j - 1) + fibo.get(j - 2);
             fibo.add(temp);
         }
         return fibo;
