@@ -21,11 +21,11 @@ import java.util.Scanner;
 public final  class Fibonacci {
 
     /**.
-     * { item_description }
+     * It is main class.
      */
     private Fibonacci() {
         /**.
-         * { item_description }
+         * It is countructor.
          */
     }
     /*
@@ -60,17 +60,19 @@ public final  class Fibonacci {
         return fibo;
     }
     /**.
-     * { function_description }
+     * It is main function.
      *
      * @param      args  The arguments
      */
 
     public static void main(final String[] args) {
         /**.
-         * { var_description }
+         * n is an integer.
          */
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
     }
 }
+
+
