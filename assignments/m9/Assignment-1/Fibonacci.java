@@ -18,8 +18,8 @@ import java.util.Scanner;
 /**.
  * Class for fibonacci.
  */
-public final  class Fibonacci
-{
+public final  class Fibonacci {
+
     /**.
      * { item_description }
      */
@@ -52,8 +52,8 @@ public final  class Fibonacci
         int temp = 0;
         fibo.add(element1);
         fibo.add(element2);
-        for(int j = 2; j < n; j++)
-        {
+        for (int j = 2; j < n; j++) {
+
             temp = fibo.get(j - 1) + fibo.get(j - 2);
             fibo.add(temp);
         }
