@@ -77,9 +77,8 @@ public class List {
         size = 0;
 
     }
-    List(int size) {
-    	size = 0;
-    	list = new int[size];	
+    List(int n) {
+    	list = new int[n];	
     }
 
     /*
