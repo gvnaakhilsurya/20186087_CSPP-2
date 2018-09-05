@@ -27,7 +27,7 @@ public class Fibonacci
      * Look for the hint.txt if some of the testcases fail.
      */
     public static List fib(int n) {
-        List fibo = new List();
+        List fibo = new List(n);
         int element1=0;
         int element2 =1;
         int temp=0;
