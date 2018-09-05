@@ -77,8 +77,8 @@ public class List {
         size = 0;
 
     }
-    List(int g) {
-    	list = new int[g];	
+    List(int x) {
+    	list = new int[x];	
     }
 
     /*
@@ -114,7 +114,6 @@ public class List {
         //Inserts the specified element at the end of the list.
         list[size++] = item;   
     }
-
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
