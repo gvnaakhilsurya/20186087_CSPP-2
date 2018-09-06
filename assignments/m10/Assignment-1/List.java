@@ -1,6 +1,6 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class List {
 	//Implement all the methods mentioned to build a ListADT
 
@@ -70,7 +70,7 @@ public class List {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new int[100];
+        list = new int[10];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -111,6 +111,7 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the zelist.
+        resize();
         list[size++] = item;   
     }
 
@@ -146,6 +147,9 @@ public class List {
      */
 
     // todo create resize method
+    private  void resize() {
+        list  = Arrays.copyOf(list, 2*size);
+    }
 
     /*
      * The size method returns the value of the size.
