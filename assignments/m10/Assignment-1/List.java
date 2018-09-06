@@ -183,7 +183,7 @@ public class List {
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
+     *
      * The method returns an int. Empty list should return 0.
      */
     /**.
@@ -244,7 +244,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     /**.
@@ -255,7 +255,7 @@ public class List {
      * @return     { description_of_the_return_value }
      */
     public int get(final int index) {
-        /**. 
+        /**.
          * { item_description }.
          */
         if (index < 0 || index >= size) {
@@ -264,7 +264,6 @@ public class List {
             return list[index];
         }
     }
-
     /*
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
@@ -274,7 +273,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -358,11 +357,10 @@ public class List {
          */
         for (int i = 0; i < items.length; i++) {
             add(items[i]);
-        }   
+        }
     }
-
      /* 
-        Inserts the specified element at the specified index 
+        Inserts the specified element at the specified index
     by moving all the elements to the right.
         The method returns void (nothing)
      */
