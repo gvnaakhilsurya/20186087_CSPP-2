@@ -108,7 +108,7 @@ public class List {
      *
      * @param      capacity  The capacity
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         /**.
          * { item_description }
          */
@@ -129,7 +129,7 @@ public class List {
      * 
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    public void add(final int item) {
         /**.
          * { item_description }
          */
@@ -223,7 +223,7 @@ public class List {
  *
  * @param      index  The index
  */
-    public void remove(int index) {
+    public void remove(final int index) {
         /**.
          * { item_description }
          */
@@ -254,7 +254,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(int index) {
+    public int get(final int index) {
         /**. 
          * { item_description }.
          */
@@ -317,7 +317,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }.
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         /**.
          * { item_description }
          */
@@ -336,7 +336,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         /**.
          * { item_description }
          */
@@ -351,7 +351,7 @@ public class List {
     /**.
      * { item_description }
      */
-    public void addAll(int items[])
+    public void addAll(final int items[])
     {
         /**.
          * { item_description }
@@ -372,12 +372,12 @@ public class List {
          * @param      index  The index
          * @param      item   The item
          */
-    public void add(int index,int item) {
+    public void add(final int index,final int item) {
         /**.
          * { item_description }
          */
-        if (index >=0 & index <= size){
-            for(int i = size; i>index;i--) {
+        if (index >= 0 & index <= size){
+            for(int i = size; i > index; i--) {
             list[i] = list[i-1];
         }
         list[index] = item;
@@ -394,7 +394,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item)
+    public int count(final int item)
     {
         /**.
          * { var_description }
@@ -412,7 +412,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { var_description }
          */
@@ -428,14 +428,14 @@ public class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length) == 2) {
+                if ((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length == 1) {
+                if (t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 }
-                else{
+                else {
                     if (t.length > 1) {
-                        l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
+                        l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
                     }
                     }
                 }
@@ -446,7 +446,7 @@ public class List {
                 case "addAll":
                 if (tokens.length ==  2) {
                 String[] t1 = tokens[1].split(",");
-                int temp[] = new int[t1.length];
+                int[] temp = new int[t1.length];
                 for (int i = 0; i < temp.length; i++) {
                     temp[i] = Integer.parseInt(t1[i]);
                 }
