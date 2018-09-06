@@ -227,8 +227,8 @@ public class List {
         /**.
          * { item_description }
          */
-        if(index >= 0 && index < size) {
-            for(int i = index; i < size - 1; i++) {
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -258,7 +258,7 @@ public class List {
         /**. 
          * { item_description }.
          */
-        if(index < 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return -1;
         } else {
             return list[index];
@@ -298,7 +298,7 @@ public class List {
             return "[]";
         String str = "[";
         int i = 0;
-        for(i = 0; i < size - 1; i++) {
+        for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
@@ -340,7 +340,7 @@ public class List {
         /**.
          * { item_description }
          */
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             if(item == list[i])
                 return i;
         }
@@ -356,7 +356,7 @@ public class List {
         /**.
          * { item_description }
          */
-        for(int i = 0; i < items.length; i++) {
+        for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }   
     }
@@ -376,7 +376,7 @@ public class List {
         /**.
          * { item_description }
          */
-        if(index >=0 & index <= size){
+        if (index >=0 & index <= size){
             for(int i = size; i>index;i--) {
             list[i] = list[i-1];
         }
@@ -400,8 +400,8 @@ public class List {
          * { var_description }
          */
         int itcount = 0;
-        for(int i = 0; i < size; i++) {
-            if(list[i] == item) {
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
                 itcount++;
             }
         }
@@ -428,14 +428,15 @@ public class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length) == 2){
+                if((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length == 1){
+                if(t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 }
                 else{
-                    if(t.length > 1)
+                    if (t.length > 1) {
                         l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
+                    }
                     }
                 }
                 break;
@@ -443,11 +444,12 @@ public class List {
                 System.out.println(l.count(Integer.parseInt(tokens[1])));
                 break;
                 case "addAll":
-                if(tokens.length ==  2){
+                if (tokens.length ==  2) {
                 String[] t1 = tokens[1].split(",");
                 int temp[] = new int[t1.length];
-                for(int i = 0; i < temp.length; i++)
+                for (int i = 0; i < temp.length; i++) {
                     temp[i] = Integer.parseInt(t1[i]);
+                }
                 l.addAll(temp);
                 }
                 break;
