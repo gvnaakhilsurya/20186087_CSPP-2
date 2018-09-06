@@ -3,8 +3,7 @@ import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*
-     * The goal for the list is to store items.
+    /** The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
      * So, when we do not what we are going to have in the list
@@ -42,12 +41,16 @@ public class List<E> {
             resize();
         list[(size++)] = item;
     }
+    public void resize() {
+        list =  Arrays.copyOf(list, 2*size);
+    }
     /*Inserts all the elements of specified int 
     array to the end of list*/
     public void addAll(E[] items) {
-        for(int i =0;i<items.length;i++) {
+        //Write logic for addAll method
+        for(int i = 0; i < items.length; i++) {
             add(items[i]);
-    }
+        }
     }
     /*
      * The size method returns the value of the size.
@@ -58,10 +61,6 @@ public class List<E> {
      */
     public int size() {
         return size;
-    }
-
-    private  void resize() {
-        list  = Arrays.copyOf(list, 2*size);
     }
     /*
      * The remove method does what the name suggests.
@@ -84,15 +83,15 @@ public class List<E> {
      * The method returns void (nothing)
      */
     public void remove(int index) {
+        //Write logic for remove method
         if(index >= 0 && index < size) {
-            for(int i = index; i < size - 1; i++) {
-                list[i] = list[i + 1];
+            for(int i = index; i < size; i++) {
+                list[i] = list[i+1];
             }
             size--;
             } else {
-            System.out.println("Invalid Position Exception");
+                System.out.println("Invalid Position Exception");
         }
-        
     }
     /*
      * Get method has to return the items that is
@@ -106,7 +105,8 @@ public class List<E> {
      * number of items in the list? Would size variable be useful?
      */
     public E get(int index) {
-         if(index < 0 || index >= size) {
+         //Write logic for get method
+        if (index < 0 || index >= size) {
             return null;
         } else {
             return list[index];
@@ -133,12 +133,11 @@ public class List<E> {
      *
      */
     public String toString() {
-
-        if(size == 0)
+        if (size == 0) 
             return "[]";
         String str = "[";
-        int i = 0;
-        for(i = 0; i < size - 1; i++) {
+        int i;
+        for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
@@ -151,7 +150,8 @@ public class List<E> {
      * the item exists and otherwise false
      */
     public boolean contains(E item) {
-        if(indexOf(item)>=0){
+		//Write logic for contains method
+        if (indexOf(item) >= 0){
             return true;
         }
         return false;
@@ -162,8 +162,9 @@ public class List<E> {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(E item) {
-        for(int i = 0; i < size; i++) {
-            if(item.equals(list[i]))
+       //Write logic for indexOf method
+        for (int i = 0; i < size; i++) {
+            if (item.equals(list[i]))
                 return i;
         }
         return -1;
