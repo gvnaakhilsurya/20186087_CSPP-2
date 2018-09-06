@@ -151,8 +151,9 @@ public class List<E> {
      * the item exists and otherwise false
      */
     public boolean contains(E item) {
-        if(indexOf(item)>0)
+        if(indexOf(item)>=0){
             return true;
+        }
         return false;
     }
     /*
