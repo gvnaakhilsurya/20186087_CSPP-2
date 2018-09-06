@@ -333,7 +333,7 @@ public class List {
         return indexOf(item) == -1;
     }
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -370,7 +370,7 @@ public class List {
             add(items[i]);
         }
     }
-     /* 
+     /*
         Inserts the specified element at the specified index
     by moving all the elements to the right.
         The method returns void (nothing)
@@ -402,8 +402,8 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(final int item)
-    {
+    public int count(final int item) {
+    
         /**.
          * { var_description }
          */
@@ -413,7 +413,7 @@ public class List {
                 itcount++;
             }
         }
-        return itcount;  
+        return itcount;
     }
     /**.
      * { function_description }
