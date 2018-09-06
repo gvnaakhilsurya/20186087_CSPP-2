@@ -131,8 +131,7 @@ public class List {
      * What is the end of the list?
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
-     * to the list.
-     * 
+     * to the list
      * The method returns void (nothing)
      */
     public void add(final int item) {
@@ -386,7 +385,7 @@ public class List {
         /**.
          * { item_description }
          */
-        if (index >= 0 & index <= size){
+        if (index >= 0 & index <= size) {
             for (int i = size; i > index; i--) {
             list[i] = list[i - 1];
         }
