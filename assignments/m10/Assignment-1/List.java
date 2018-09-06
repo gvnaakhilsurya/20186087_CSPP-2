@@ -365,10 +365,9 @@ public class List {
    /*Inserts all the elements of specified int
     array to the end of list*/
     /**.
-     * { item_description }.
-     */
-    /**.
-     * { item_description }.
+     * Adds all.
+     *
+     * @param      items  The items
      */
     public void addAll(final int[] items) {
         /**.
