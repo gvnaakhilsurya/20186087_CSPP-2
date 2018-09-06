@@ -170,7 +170,10 @@ public class StringList implements StringListInterface{
                 list[i] = list[i + 1];
             }
             size--;
+            } else {
+            System.out.println("Invalid Position Exception");
         }
+        
     }
     /*
      * Get method has to return the items that is
