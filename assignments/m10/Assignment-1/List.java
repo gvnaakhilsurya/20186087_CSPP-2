@@ -75,7 +75,7 @@ public class List {
      * Constructs the object.
      */
     public List() {
-        final int Ten = 10;
+        final int TEN = 10;
         /**.
          * { item_description }
          */
@@ -86,7 +86,7 @@ public class List {
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
         **/
-        list = new int[Ten];
+        list = new int[TEN];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
@@ -149,10 +149,10 @@ public class List {
      */
     /*
      * Resize the list
-     * Sometimes the clients of the ADT won't 
+     * Sometimes the clients of the ADT won't
      * know the expected list capacity
      * To solve this the list has to grow dynamically
-     * when the maximum capacity is reached and 
+     * when the maximum capacity is reached and
      * there is no room to add items.
      * So, how do we dynamically resize the list?
      * Java doesn't support resize of array.
@@ -160,23 +160,21 @@ public class List {
      *
      * Option 1
      * Create a new array of the desired size,
-     * and copy the contents from the original 
+     * and copy the contents from the original
      * array to the new array,
      * using java.lang.System.arraycopy(...);
-     * 
      * Option 2
-     * Use java.util.Arrays.copyOf(...) methods 
+     * Use java.util.Arrays.copyOf(...) methods
      * which returns a bigger array,
      * with the contents of the original array.
      * TODO
-     * Create a method called resize(). Resize should 
+     * Create a method called resize(). Resize should
      * create an new array that is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
-     * 
      * When should the resize method be
      * invoked and from where?
-     * Will the client invoke resize or 
+     * Will the client invoke resize or
      * is it internal to List class?
      * Should the resize be public method or private?
      * Should the resize method return any values?
@@ -190,7 +188,7 @@ public class List {
         /**.
          * { item_description }
          */
-        list  = Arrays.copyOf(list, 2*size);
+        list  = Arrays.copyOf(list, 2 * size);
     }
     /*
      * The size method returns the value of the size.
@@ -213,7 +211,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -296,12 +294,18 @@ public class List {
      * Returns a string representation of the object.
      * @return     String representation of the object.
      */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         /**.
          * { item_description }.
          */
-        if(size == 0)
+        if (size == 0) {
             return "[]";
+        }
         String str = "[";
         int i = 0;
         for (i = 0; i < size - 1; i++) {
@@ -346,7 +350,7 @@ public class List {
          * { item_description }
          */
         for (int i = 0; i < size; i++) {
-            if(item == list[i])
+            if (item == list[i])
                 return i;
         }
         return -1;
@@ -356,8 +360,10 @@ public class List {
     /**.
      * { item_description }.
      */
-    public void addAll(final int items[]) {
-    
+    /**.
+     * { item_description }.
+     */
+    public void addAll(final int[] items) {
         /**.
          * { item_description }
          */
@@ -393,7 +399,6 @@ public class List {
     /* Returns the count of occurances of a given item in the list*/
     /**.
      * { function_description }
-     *
      * @param      item  The item
      *
      * @return     { description_of_the_return_value }
@@ -411,7 +416,7 @@ public class List {
         }
         return itcount;  
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
