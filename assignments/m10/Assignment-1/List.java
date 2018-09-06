@@ -1,6 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**.
+ * List of .
+ */
 public class List {
     /**.
      * { item_description }
@@ -29,6 +32,9 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**.
+     * { var_description }
+     */
     private int[] list;
     /**.
      * { item_description }
@@ -96,6 +102,11 @@ public class List {
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
+     */
+    /**.
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
      */
     public List(int capacity) {
         /**.
@@ -175,9 +186,14 @@ public class List {
      * 
      * The method returns an int. Empty list should return 0.
      */
+    /**.
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         /**.
-         * { item_description }
+         * { item_description }.
          */
         return size;
     }
@@ -203,7 +219,7 @@ public class List {
      * The method returns void (nothing)
      */
 /**.
- * { function_description }
+ * { function_description }.
  *
  * @param      index  The index
  */
@@ -232,7 +248,7 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     /**.
-     * { function_description }
+     * { function_description }.
      *
      * @param      index  The index
      *
@@ -240,7 +256,7 @@ public class List {
      */
     public int get(int index) {
         /**. 
-         * { item_description }
+         * { item_description }.
          */
         if(index < 0 || index >= size) {
             return -1;
@@ -276,7 +292,7 @@ public class List {
      */
     public String toString() {
         /**.
-         * { item_description }
+         * { item_description }.
          */
         if(size == 0)
             return "[]";
@@ -295,11 +311,11 @@ public class List {
      * the item exists and otherwise false
      */
     /**.
-     * { function_description }
+     * { function_description }.
      *
      * @param      item  The item
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public boolean contains(int item) {
         /**.
