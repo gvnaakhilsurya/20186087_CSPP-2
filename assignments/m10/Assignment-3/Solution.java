@@ -2,18 +2,55 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 //A Class is implemented for Student details
 class Student {
+	/**.
+	 * { var_description }
+	 */
 	private String name;
-	
-	public Student(String name) {//A constructor used to initialize the instance variables
+	/**.
+	 * Constructs the object.
+	 *
+	 * @param      name  The name
+	 */
+	public Student(String name) { 
+		/**.
+		 * { item_description }
+		 */
+	 /*A constructor used to initialize the instance variables*/
 		this.name = name;
 	}
+	/**.
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 
-	public String getName() {//Getter method which returns the value of instance variable
+	public String getName() {
+		/**.
+		 * { item_description }
+		 */
+		/*Getter method which returns the value of instance variable*/
 		return this.name;
 	}
-
+	/**.
+	 * { function_description }
+	 *
+	 * @param      other  The other
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	@Override
-	public boolean equals(Object other) { //This method is to check if two students names are equal or not
+	/**.
+	 * { function_description }
+	 *
+	 * @param      other  The other
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public boolean equals(Object other) {
+		/**.
+		 * { item_description }
+		 */
+		/*This method is to check if two students names are equal or not*/
 		if (!(other instanceof Student)) {
 			return false;
 		}
@@ -26,15 +63,22 @@ class Student {
 		return this.name;
 	}
 }
-
+/**.
+ * Class for solution.
+ */
 public class Solution {
-	
-
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
-        // create an object of the list to invoke methods on it
+		/**.
+		 * { item_description }
+		 */
+        /* create an object of the list to invoke methods on it*/
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         String objectType = stdin.nextLine();
-
         switch(objectType) {
         	case "S"://This case will be executed for String type list
         		List<String> listString = new List();
@@ -198,7 +242,7 @@ public class Solution {
 			                listCharacter.add(tokens[1].charAt(0));
 		                break;
 		                case "addAll":
-		                if(tokens.length==2){
+		                if(tokens.length == 2){
 		                String[] t1 = tokens[1].split(",");
 		                Character[] temp = new Character[t1.length];
 		                for (int i = 0; i < t1.length ;i++ ) {
