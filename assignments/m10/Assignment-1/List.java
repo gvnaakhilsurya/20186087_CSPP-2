@@ -75,7 +75,7 @@ public class List {
      * Constructs the object.
      */
     public List() {
-        final int TEN = 10;
+        final int ten = 10;
         /**.
          * { item_description }
          */
@@ -86,7 +86,7 @@ public class List {
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
         **/
-        list = new int[TEN];
+        list = new int[ten];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
@@ -104,7 +104,6 @@ public class List {
      * There will be some clients of the ADT that will require
      * the list to contain n elements which is known
      * at the time of creating the list.
-     * 
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
