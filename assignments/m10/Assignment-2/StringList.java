@@ -81,7 +81,7 @@ public class StringList implements StringListInterface{
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new String[100];
+        list = new String[10];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -120,6 +120,8 @@ public class StringList implements StringListInterface{
      * The method returns void (nothing)
      */
     public void add(String item) {
+        if (size == list.length)
+            resize();
         list[size++] = item;
     }
     /*Inserts all the elements of specified int 
@@ -142,6 +144,10 @@ public class StringList implements StringListInterface{
     public int size() {
         return size;
     }
+
+    private  void resize() {
+        list  = Arrays.copyOf(list, 2*size);
+    } 
 
     /*
      * The remove method does what the name suggests.
