@@ -12,20 +12,16 @@ public final  class Solution {
         /**.
          * { item_description }
          */
-
     }
     /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
-	
-
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { item_description }
          */
-
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
         StringListInterface l = (StringListInterface) sl; 
@@ -41,7 +37,7 @@ public final  class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-	                l.add(tokens[1]);
+                    l.add(tokens[1]);
                 break;
                 case "addAll":
                 if (tokens.length == 2) {
@@ -77,5 +73,5 @@ public final  class Solution {
                 default:
             }
         }
-	}
+    }
 }
