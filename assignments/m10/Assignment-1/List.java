@@ -359,7 +359,10 @@ public class List {
         }
         return -1;
     }
-   /*Inserts all the elements of specified int 
+    /**.
+     * { item_description }
+     */
+   /*Inserts all the elements of specified int
     array to the end of list*/
     /**.
      * { item_description }.
@@ -408,7 +411,6 @@ public class List {
      * @return     { description_of_the_return_value }
      */
     public int count(final int item) {
-    
         /**.
          * { var_description }
          */
