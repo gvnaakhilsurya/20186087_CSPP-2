@@ -133,6 +133,11 @@ public class List {
      * to the list
      * The method returns void (nothing)
      */
+    /**.
+     * { function_description }.
+     *
+     * @param      item  The item
+     */
     public void add(final int item) {
         /**.
          * { item_description }
@@ -348,8 +353,9 @@ public class List {
          * { item_description }
          */
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
@@ -484,6 +490,7 @@ public class List {
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default:
             }
         }
     }
