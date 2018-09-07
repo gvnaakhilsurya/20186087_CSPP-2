@@ -1,19 +1,54 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 //A Class is implemented for Student details
+/**.
+ * Class for student.
+ */
 class Student {
+    /**.
+     * { var_description }
+     */
 	private String name;
-
-	public Student(String name) {//A constructor used to initialize the instance variables
+    /**.
+     * Constructs the object.
+     *
+     * @param      name  The name
+     */
+	public Student(final String name) {//A constructor used to initialize the instance variables
 		this.name = name;
 	}
-
-	public String getName() {//Getter method which returns the value of instance variable
+    /**.
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+	public String getName() {
+    //Getter method which returns the value of instance variable
+        /**.
+         * { item_description }
+         */
 		return this.name;
 	}
-
+    /**.
+     * { function_description }
+     *
+     * @param      other  The other
+     *
+     * @return     { description_of_the_return_value }
+     */
 	@Override
-	public boolean equals(Object other) { //This method is to check if two students names are equal or not
+    /**.
+     * { function_description }
+     *
+     * @param      other  The other
+     *
+     * @return     { description_of_the_return_value }
+     */
+	public boolean equals(final Object other) {
+     //This method is to check if two students names are equal or not
+        /**.
+         * { item_description }
+         */
 		if (!(other instanceof Student)) {
 			return false;
 		}
@@ -21,15 +56,45 @@ class Student {
 		Student that = (Student) other;
 		return this.getName().equals(that.getName());
 	}
-
+    @Override
+    public int hashCode() {
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    return 0;
+    }
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
 	public String toString() {
+        /**.
+         * { item_description }
+         */
 		return this.name;
 	}
 }
-
+/**.
+ * Class for solution.
+ */
 public class Solution {
-
+    /**.
+     * { function_description }
+     *
+     * @param      stdin  The stdin
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      stdin  The stdin
+     */
 	public static void executeListInteger(Scanner stdin) {
+        /**.
+         * { var_description }
+         */
 		List<Integer> l = new List();
         while (stdin.hasNext()) {
             // read the line
@@ -117,7 +182,7 @@ public class Solution {
             }
         }	
 	}
-	public static void executeListDouble(Scanner stdin) {
+	public static void executeListDouble(final Scanner stdin) {
 		List<Double> l = new List();
         while (stdin.hasNext()) {
             // read the line
@@ -127,7 +192,7 @@ public class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-                    if (tokens.length == 2){
+                    if (tokens.length == 2) {
                         String[] t = tokens[1].split(",");
                         if (t.length == 1) {
                             l.add(Double.parseDouble(tokens[1]));
@@ -205,7 +270,7 @@ public class Solution {
             }
         }
 	}
-    public static void executeListFloat(Scanner stdin) {
+    public static void executeListFloat(final Scanner stdin) {
 		List<Float> l = new List();
         while (stdin.hasNext()) {
             // read the line
@@ -294,7 +359,7 @@ public class Solution {
         }	
 	}
 
-    public static void executeListString(Scanner stdin) {
+    public static void executeListString(final Scanner stdin) {
 		List<String> l = new List();
         while (stdin.hasNext()) {
             // read the line
@@ -376,7 +441,7 @@ public class Solution {
         }	
 	}
 
-	public static void executeListStudent(Scanner stdin) {
+	public static void executeListStudent(final Scanner stdin) {
 		List<Student> l = new List();
         while (stdin.hasNext()) {
             // read the line
@@ -386,7 +451,7 @@ public class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-                    if (tokens.length == 2){
+                    if (tokens.length == 2) {
                         String[] t = tokens[1].split(",");
                         if (t.length == 1) {
                             l.add(new Student(tokens[1]));
@@ -466,7 +531,7 @@ public class Solution {
         }	
 	}
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         String objectType = stdin.nextLine();
