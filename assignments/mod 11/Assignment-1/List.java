@@ -1,5 +1,8 @@
 import java.io.BufferedInputStream;
 import java.util.*;
+/**.
+ * List of .
+ */
 public class List {
 /**.
  * { item_description }
@@ -172,7 +175,7 @@ public void remove(int index) {
      * { item_description }
      */
    if(index >= 0 && index < size){
-   	for(int i = index; i < size-1; i++){
+   	for(int i =index; i < size-1; i++){
    		list[i] = list[i + 1];
    	}
    	size--;
