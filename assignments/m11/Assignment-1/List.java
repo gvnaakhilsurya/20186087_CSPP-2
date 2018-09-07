@@ -265,13 +265,12 @@ public class List {
     */
     public List subList(int start, int end) {
         List l1 = new List();
-        if(start <= size && end <= size) {
-            System.out.println("Index Out of Bounds Exception");
-        } else {
+        // if(start <= size && end <= size) {
+        //     System.out.println("Index Out of Bounds Exception");
+        // } else {
             for(int i = start ;i < end ; i++) {
                 l1.add(i);
             }
-        }
     return l1;
     }
     /*
