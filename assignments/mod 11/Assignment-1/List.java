@@ -88,7 +88,7 @@ public List() {
  *
  * @param      capacity  The capacity
  */
-public List(int capacity){
+public List(final int capacity) {
     /**.
      * { item_description }
      */
@@ -104,12 +104,12 @@ public List(int capacity){
  *
  * The method returns void (nothing)
  */
-public void add(int item) {
+public void add(final int item) {
     /**.
      * { item_description }
      */
  /*Inserts the specified element at the end of the list.*/
-	if(size == list.length){
+	if (size == list.length) {
 		resize();
 	}
     list[size++] = item;
@@ -117,7 +117,7 @@ public void add(int item) {
 /**.
  * { function_description }
  */
-private void resize(){
+private void resize() {
     /**.
      * { item_description }
      */
@@ -173,10 +173,10 @@ public void remove(int index) {
      */
    if(index >= 0 && index < size){
    	for(int i = index; i < size-1; i++){
-   		list[i] = list[i+1];
+   		list[i] = list[i + 1];
    	}
    	size--;
-   }else{
+   } else {
    	System.out.println("Invalid Position Exception");
    }
 }
@@ -204,7 +204,7 @@ public int get(int index) {
     /**.
      * { item_description }
      */
-    if(index >=0 && index < size){
+    if(index >= 0 && index < size) {
     	return list[index];
     }
     return -1;
@@ -234,11 +234,11 @@ public String toString() {
     /**.
      * { item_description }
      */
-   if(size == 0){
+   if(size == 0) {
    	return "[]";
    }
    String str = "[";
-   for(int i = 0; i < size-1; i++){
+   for(int i = 0; i < size - 1; i++) {
    	str += list[i] + ",";
    }
    return str + list[size-1] + "]";
@@ -256,7 +256,7 @@ public boolean contains(int item) {
      * { item_description }
      */
     /* Replace the code below*/
-    if(indexOf(item) == -1){
+    if(indexOf(item) == -1) {
     	return false;
     }return true;
 }
@@ -278,8 +278,8 @@ public int indexOf(int item) {
     /**.
      * { item_description }
      */
-    for(int i = 0; i<size; i++){
-    	if(list[i] ==item){
+    for(int i = 0; i < size; i++) {
+    	if(list[i] == item){
     		return i;
     	}
     }
@@ -299,7 +299,7 @@ Inserts all the elements of specified int array to the end of list
  */
 public void addAll(int[] newArray) {
 
-    for (int i = 0; i < newArray.length ;i++ ) {
+    for (int i = 0; i < newArray.length; i++ ) {
     	add(newArray[i]);
     }
 }
@@ -322,9 +322,9 @@ public void addAll(int[] newArray) {
  
     for(int i = 0; i < newArray.length; i++){
     	int index = indexOf(newArray[i]);
-    	while(index!=-1){
+    	while(index!= -1){
     		remove(index);
-    		index =indexOf(newArray[i]);
+    		index = indexOf(newArray[i]);
     	}
     }
 
@@ -344,26 +344,26 @@ and also if start is greater than end.
  *
  * @return     { description_of_the_return_value }
  */
-public List subList(int start, int end) 
-{
+public List subList(int start, int end) {
+
     /**.
      * { item_description }
      */
 /* write the logic for subList*/
-	if(start < 0 || end < 0){
+	if(start < 0 || end < 0) {
 		System.out.println("Index Out of Bounds Exception");
 		return null;
 	}
-	if(start > size || end > size || start > end){
+	if(start > size || end > size || start > end) {
 		System.out.println("Index Out of Bounds Exception");
 		return null;
 	}
-	if(start==end && start >= size){
+	if(start == end && start >= size) {
 		System.out.println("Index Out of Bounds Exception");
 		return null;
 	}
 	List newList = new List(end - start);
-	for(int i = start; i < end;i++){
+	for(int i = start; i < end;i++) {
 		newList.add(list[i]);
 	}
 	return newList;
@@ -373,8 +373,8 @@ public List subList(int start, int end)
 Returns a boolean indicating whether the parameter i.e a List object is
 exactly matching with the given list or not.
 */
-public boolean equals(List newlist ) 
-{
+public boolean equals(List newlist ) {
+
 // Replace the code below
 return toString().equals(newlist.toString());
 }
@@ -383,8 +383,8 @@ return toString().equals(newlist.toString());
 * Think about this case and make the method
 * the simpler.
 */
-public void clear()
-{
+public void clear() {
+
 // write the logic for clear.
 	size = 0;
 
@@ -405,7 +405,7 @@ public static void main(String[] args) {
         // based on the list operation invoke the corresponding method
         switch (tokens[0]) {
             case "add":
-                if (tokens.length == 2){
+                if (tokens.length == 2) {
                     String[] t = tokens[1].split(",");
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
