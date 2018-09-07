@@ -155,9 +155,9 @@ public class List<E> {
      */
     public boolean contains(E item) {
         if (indexOf(item) == -1){
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
     /*
      * Returns the index of the first occurrence
