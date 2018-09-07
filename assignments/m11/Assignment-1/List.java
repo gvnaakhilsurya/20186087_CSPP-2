@@ -128,9 +128,6 @@ public class List {
      * @param      item  integr.
      */
     public void add(int item) {
-        if(size == list.length) {
-            resize();
-        }
         list[size ++] = item;
     }
 
@@ -144,10 +141,6 @@ public class List {
     public int size() {
         // replace the code below to implement the size method
         return size;
-    }
-
-    public void resize() {
-        list = Arrays.copyOf(list,2 * size);
     }
 
     /*
@@ -213,7 +206,7 @@ public class List {
         String str = "[";
         int i = 0;
         for(i = 0; i<size -1; i++) {
-            str = str + list[i] + " ,";
+            str = str + list[i] + ",";
 
         } str = str + list[i] + "]";
         return str;  
