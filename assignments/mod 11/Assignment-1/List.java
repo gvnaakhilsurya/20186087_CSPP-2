@@ -179,7 +179,7 @@ public void remove(final int index) {
     /**.
      * { item_description }
      */
-   if (index >= 0 && index < size){
+   if (index >= 0 && index < size) {
     for (int i = index; i < size - 1; i++) {
         list[i] = list[i + 1];
     }
@@ -249,7 +249,7 @@ public String toString() {
    for (int i = 0; i < size - 1; i++) {
     str += list[i] + ",";
    }
-   return str + list[size-1] + "]";
+   return str + list[size - 1] + "]";
 } 
 /**.
  * { item_description }
@@ -258,6 +258,13 @@ public String toString() {
  * Contains return true if the list has the item passed as an argument to
  * the method So, iterate through the list and return true if the item
  * exists and otherwise false
+ */
+/**.
+ * { function_description }
+ *
+ * @param      item  The item
+ *
+ * @return     { description_of_the_return_value }
  */
 public boolean contains(final int item) {
     /**.
@@ -287,7 +294,7 @@ public int indexOf(final int item) {
      * { item_description }
      */
     for (int i = 0; i < size; i++) {
-        if (list[i] == item){
+        if (list[i] == item) {
             return i;
         }
     }
@@ -298,16 +305,15 @@ public int indexOf(final int item) {
  */
 
 /*
-Inserts all the elements of specified int array to the end of list    
+Inserts all the elements of specified int array to the end of list
 */
 /**.
  * Adds all.
  *
  * @param      newArray  The new array
  */
-public void addAll(int[] newArray) {
-
-    for (int i = 0; i < newArray.length; i++ ) {
+public void addAll(final int[] newArray) {
+    for (int i = 0; i < newArray.length; i++) {
         add(newArray[i]);
     }
 }
@@ -315,8 +321,8 @@ public void addAll(int[] newArray) {
  * { item_description }
  */
 /*
- Removes all of its elements that are contained in the specified int 
- array.    
+ Removes all of its elements that are contained in the specified int
+ array.
 */
  /**.
   * Removes all.
@@ -330,7 +336,7 @@ public void addAll(int[] newArray) {
  
     for (int i = 0; i < newArray.length; i++){
         int index = indexOf(newArray[i]);
-        while (index!= -1){
+        while (index != -1) {
             remove(index);
             index = indexOf(newArray[i]);
         }
@@ -377,28 +383,53 @@ public List subList(final int start, final int end) {
     return newList;
 
 }
+/**.
+ * { item_description }
+ */
 /*
 Returns a boolean indicating whether the parameter i.e a List object is
 exactly matching with the given list or not.
 */
+/**.
+ * { function_description }
+ *
+ * @param      newlist  The newlist
+ *
+ * @return     { description_of_the_return_value }
+ */
 public boolean equals(final List newlist ) {
+    /**.
+     * { item_description }
+     */
     return toString().equals(newlist.toString());
-// Replace the code below
 }
+/**.
+ * { item_description }
+ */
 /*
 * Removes all the elements from list
 * Think about this case and make the method
 * the simpler.
 */
 public void clear() {
-
-// write the logic for clear.
+    /**.
+     * { item_description }
+     */
+/*write the logic for clear.*/
     size = 0;
 
 }
+/**.
+ * { function_description }
+ *
+ * @param      args  The arguments
+ */
 
 public static void main(final String[] args) {
-    // create an object of the list to invoke methods on it
+    /**.
+     * { item_description }
+     */
+    /* create an object of the list to invoke methods on it*/
     List l = new List();
 
     // code to read the test cases input file
@@ -452,7 +483,7 @@ public static void main(final String[] args) {
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
                     int[] temp = new int[t1.length];
-                    for(int i = 0; i < temp.length; i++) {
+                    for (int i = 0; i < temp.length; i++) {
                         temp[i]=Integer.parseInt(t1[i]);
                     }
                     l.addAll(temp);
@@ -462,24 +493,28 @@ public static void main(final String[] args) {
                 if (tokens.length == 2) {
                     String[] t2 = tokens[1].split(",");
                     int[] a = new int[t2.length];
-                    for(int i = 0; i < t2.length; i++)
+                    for (int i = 0; i < t2.length; i++) {
                         a[i] = Integer.parseInt(t2[i]);
+                    }
                     l.removeAll(a);
                 }
             break;
             case "subList": {
-                if (tokens.length != 2) break;
+                if (tokens.length != 2) {
+                    break;
+                }
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
                         Integer.parseInt(arrstring3[1]));
-                if (object != null) 
+                if (object != null) {
                     System.out.println(object);
+                }
                 break;
             }
             case "equals":
                 if (tokens.length == 2) {
                     String[] lt = tokens[1].split(",");
-                    List l2 =new List();
+                    List l2 = new List();
                     for (int k = 0; k < lt.length; k++ ) {
                         l2.add(Integer.parseInt(lt[k]));
                     }
