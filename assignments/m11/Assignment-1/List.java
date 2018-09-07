@@ -251,8 +251,8 @@ public class List {
      Removes all of its elements that are contained in the specified int 
      array.    
     */
-     public void removeAll(int[] newArray)
-     {
+     public void removeAll(int[] newArray) {
+     
         
 
      }
@@ -265,12 +265,13 @@ public class List {
     */
     public List subList(int start, int end) {
         List l1 = new List();
-        // if(start <= size && end <= size) {
-        //     System.out.println("Index Out of Bounds Exception");
-        // } else {
+        if(start < 0 || end <= 0) {
+            System.out.println("Index Out of Bounds Exception");
+        } else {
             for(int i = start ;i < end ; i++) {
                 l1.add(i);
             }
+        }
     return l1;
     }
     /*
