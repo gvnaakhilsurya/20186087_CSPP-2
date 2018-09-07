@@ -204,8 +204,9 @@ public class List<E> {
             for(int i = n ;i < n2 ; i++) {
                 l1.add(list[i]);
             }
+            return l1;
         }
-    return l1;
+    return null;
     }
     /*Returns a boolean indicating whether the parameter
       i.e a List object is exactly matching with the given list or not.
