@@ -202,7 +202,7 @@ public class List<E> {
             System.out.println("Index Out of Bounds Exception");
         } else {
             for(int i = n ;i < n2 ; i++) {
-                l1.add(i);
+                l1.add(list[i]);
             }
         }
     return l1;
