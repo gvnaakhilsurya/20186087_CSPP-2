@@ -252,9 +252,6 @@ public class List {
      array.    
     */
      public void removeAll(int[] newArray) {
-     
-        
-
      }
     /*
     Returns a list object containing elements, including startIndex and
@@ -265,7 +262,7 @@ public class List {
     */
     public List subList(int start, int end) {
         List l1 = new List();
-        if(start < 0 || end <= 0) {
+        if(start < 0 || end >=0) {
             System.out.println("Index Out of Bounds Exception");
         } else {
             for(int i = start ;i < end ; i++) {
