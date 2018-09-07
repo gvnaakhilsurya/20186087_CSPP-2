@@ -128,6 +128,9 @@ public class List {
      * @param      item  integr.
      */
     public void add(int item) {
+        if(size == list.length) {
+            resize();
+        }
         list[size ++] = item;
     }
 
@@ -141,6 +144,10 @@ public class List {
     public int size() {
         // replace the code below to implement the size method
         return size;
+    }
+
+    public void resize() {
+        list = Arrays.copyOf(list,2 * size);
     }
 
     /*
@@ -206,7 +213,7 @@ public class List {
         String str = "[";
         int i = 0;
         for(i = 0; i<size -1; i++) {
-            str = str + list[i] + ",";
+            str = str + list[i] + "";
 
         } str = str + list[i] + "]";
         return str;  
@@ -267,10 +274,11 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
-    public boolean equals(List list ) 
-    {
-    // Replace the code below
-    return true;
+    public boolean equals(List newlist ) {
+        if(newlist.equals(list)) {
+            return true;
+        }
+    return false;
     }
     /*
     * Removes all the elements from list
