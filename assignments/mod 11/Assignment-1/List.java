@@ -274,7 +274,8 @@ public boolean contains(final int item) {
     /* Replace the code below*/
     if (indexOf(item) == -1) {
         return false;
-    } return true;
+    }
+    return true;
  }
 /**.
  * { item_description }
@@ -502,7 +503,7 @@ public static void main(final String[] args) {
                     l.removeAll(a);
                 }
             break;
-            case "subList": 
+            case "subList":
                 if (tokens.length != 2) {
                     break;
                 }
