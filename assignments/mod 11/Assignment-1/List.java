@@ -1,5 +1,6 @@
 import java.io.BufferedInputStream;
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 /**.
  * List of .
  */
@@ -250,7 +251,7 @@ public String toString() {
     str += list[i] + ",";
    }
    return str + list[size - 1] + "]";
-} 
+}
 /**.
  * { item_description }
  */
@@ -274,7 +275,7 @@ public boolean contains(final int item) {
     if (indexOf(item) == -1) {
         return false;
     } return true;
-}
+ }
 /**.
  * { item_description }
  */
@@ -333,8 +334,7 @@ public void addAll(final int[] newArray) {
     /**.
      * { item_description }
      */
- 
-    for (int i = 0; i < newArray.length; i++){
+    for (int i = 0; i < newArray.length; i++) {
         int index = indexOf(newArray[i]);
         while (index != -1) {
             remove(index);
@@ -346,7 +346,7 @@ public void addAll(final int[] newArray) {
 /*
 Returns a list object containing elements, including startIndex and
 excluding endIndex. The first parameter indicates the startIndex and the
-second parameter indicates the endIndex. Returns null and print 
+second parameter indicates the endIndex. Returns null and print
 "Index Out of Bounds Exception" if any of values start and end are negative
 and also if start is greater than end.
 */
@@ -377,7 +377,7 @@ public List subList(final int start, final int end) {
         return null;
     }
     List newList = new List(end - start);
-    for (int i = start; i < end;i++) {
+    for (int i = start; i < end; i++) {
         newList.add(list[i]);
     }
     return newList;
@@ -397,7 +397,7 @@ exactly matching with the given list or not.
  *
  * @return     { description_of_the_return_value }
  */
-public boolean equals(final List newlist ) {
+public boolean equals(final List newlist) {
     /**.
      * { item_description }
      */
@@ -411,6 +411,9 @@ public boolean equals(final List newlist ) {
 * Think about this case and make the method
 * the simpler.
 */
+/**.
+ * { function_description }
+ */
 public void clear() {
     /**.
      * { item_description }
@@ -484,7 +487,7 @@ public static void main(final String[] args) {
                     String[] t1 = tokens[1].split(",");
                     int[] temp = new int[t1.length];
                     for (int i = 0; i < temp.length; i++) {
-                        temp[i]=Integer.parseInt(t1[i]);
+                        temp[i] = Integer.parseInt(t1[i]);
                     }
                     l.addAll(temp);
                 }
@@ -499,7 +502,7 @@ public static void main(final String[] args) {
                     l.removeAll(a);
                 }
             break;
-            case "subList": {
+            case "subList": 
                 if (tokens.length != 2) {
                     break;
                 }
@@ -510,12 +513,11 @@ public static void main(final String[] args) {
                     System.out.println(object);
                 }
                 break;
-            }
             case "equals":
                 if (tokens.length == 2) {
                     String[] lt = tokens[1].split(",");
                     List l2 = new List();
-                    for (int k = 0; k < lt.length; k++ ) {
+                    for (int k = 0; k < lt.length; k++) {
                         l2.add(Integer.parseInt(lt[k]));
                     }
                     System.out.println(l.equals(l2));
