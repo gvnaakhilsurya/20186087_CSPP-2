@@ -15,7 +15,7 @@ public class List<E> {
     //Constructor
     public List() {
         // Create a variable of the type Object[]
-        list = ((E[])new Object[10]);//Object is the base class for all the classes
+        list =((E[])new Object[10]);//Object is the base class for all the classes
         size = 0;
     }
     //Overloaded Constructor
@@ -51,7 +51,7 @@ public class List<E> {
      * { function_description }
      */
     private void resize(){
-         list  = Arrays.copyOf(list, 2 * size);
+         list  =Arrays.copyOf(list,2 * size);
     }
 
     /*
@@ -64,6 +64,9 @@ public class List<E> {
     public int size() {
     	return size;
     }
+    /**.
+     * { item_description }
+     */
     /*
      * The remove method does what the name suggests.
      * Removes a String item, specified by the index argument, from the list
@@ -104,6 +107,13 @@ public class List<E> {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
      */
     public E get(int index) {
          //Write logic for get method
