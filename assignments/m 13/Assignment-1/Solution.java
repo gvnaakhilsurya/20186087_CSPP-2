@@ -27,8 +27,9 @@ class Set {
     	}
     	for (int i = 0;i < set.length; i++) {
     		if(set[i] != item) {
-    			set[size++] = item;
+    			
     		}
+    		set[size++] = item;
     	}
 
     }
