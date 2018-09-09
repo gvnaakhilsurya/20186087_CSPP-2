@@ -106,7 +106,17 @@ class Set {
 
 	}
 	public int[][] cartesianProduct(Set newset) {
-		return null;
+		int[][] result = new int[size*newset.size()][2];
+        int k = 0;
+        for (int i=0; i<size; i++) {
+            for (int j=0; j<newset.size; j++) {
+                result[k][0] = set[i];
+                result[k][1] = newset.get(i);
+                k++;
+            }
+            
+        }
+        return result;
 	}
 
 
