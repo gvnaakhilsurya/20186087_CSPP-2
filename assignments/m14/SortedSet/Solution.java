@@ -50,7 +50,7 @@ import java.util.Arrays;
     /**
      * resize the set by double, when it is full.
      */
-    private void resize() {
+    public void resize() {
         set = Arrays.copyOf(set, size * 2);
     }
 
