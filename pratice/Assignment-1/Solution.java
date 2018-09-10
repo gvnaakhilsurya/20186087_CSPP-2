@@ -14,8 +14,8 @@ class Set {
     private int size;
 
     public Set() {
-    	this.set = new int[20];
-    	this.size = 0;
+    	this.set =new int[20];
+    	this.size =0;
     }
 
     public Set(int x) {
