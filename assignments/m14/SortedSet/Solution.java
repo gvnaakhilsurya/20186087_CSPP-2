@@ -38,7 +38,7 @@ import java.util.Arrays;
      * the size of the current set.
      * @param item to be inserted at the last.
      */
-    public void add(int item) {
+    public void add(final int item) {
         if (size == set.length) {
             resize();
         }
@@ -101,7 +101,7 @@ import java.util.Arrays;
      * @return the cartesian product in the form of 2D array.
      */
     public int[][] cartesianProduct(final Set newset) {
-        int [][] a1 = new int[this.size() * newset.size()][2];
+        int[][] a1 = new int[this.size() * newset.size()][2];
         int k = -1;
         if (this.size() == 0 || newset.size() == 0) {
             return null;
