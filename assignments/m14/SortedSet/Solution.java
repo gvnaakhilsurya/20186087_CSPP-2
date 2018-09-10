@@ -59,7 +59,7 @@ import java.util.Arrays;
      * @param newArray as newArray to be added in this set,
      *            if the element is not present in this set.
      */
-    public void add(int[] newArray) {
+    public void add(final int[] newArray) {
         for (int i = 0; i < newArray.length; i++) {
             add(newArray[i]);
         }
@@ -71,7 +71,7 @@ import java.util.Arrays;
      * @return the result that contains the common
      * elements of the two sets.
      */
-    public Set intersection(Set newset) {
+    public Set intersection(final Set newset) {
         Set s1 = new Set();
         for (int i = 0; i < size; i++) {
             if (newset.contains(get(i))) {
@@ -142,13 +142,13 @@ import java.util.Arrays;
      * @return string.
      */
     public String toString() {
-        if(size == 0) {
+        if (size == 0) {
             return "{}";
         }
         String str = "{";
-        for(int i = 0; i < size - 1; i++) {
+        for (int i = 0; i < size - 1; i++) {
             str = str + set[i] + ", ";
-        }return str + set[size - 1] + "}";
+        } return str + set[size - 1] + "}";
     }
     /**
      * returns true if this set contains the item.
