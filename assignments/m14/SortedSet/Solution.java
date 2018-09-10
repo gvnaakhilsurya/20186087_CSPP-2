@@ -150,9 +150,6 @@ import java.util.Arrays;
             str = str + set[i] + ", ";
         }return str + set[size - 1] + "}";
     }
-    
-        
-
     /**
      * returns true if this set contains the item.
      * @param  item as a parameter to be checked in the set.
@@ -178,6 +175,9 @@ import java.util.Arrays;
         return -1;
     }
 }
+/**.
+ * Class for sorted set.
+ */
 class SortedSet extends Set {
     /**
      * sort function.
