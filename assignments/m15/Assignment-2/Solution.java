@@ -65,7 +65,6 @@ import java.util.Arrays;
     /**.
      * { item_description }
      */
-    
         return set;
     }
     /**
@@ -117,6 +116,11 @@ import java.util.Arrays;
         }
         return intersection(s2);
     }
+    /**.
+     * { function_description }
+     *
+     * @param      array  The array
+     */
     public void sort(final int[] array) {
         /**.
          * { var_description }
@@ -245,7 +249,7 @@ class SortedSet extends Set {
          */
         if (start > end) {
             //System.out.println("Invalid Arguments to Subset Exception");
-            throw new Exception("Invalid Arguments to Subset Exception"); 
+            throw new Exception("Invalid Arguments to Subset Exception");
         }
         int[] result = new int[size()];
         int k = 0;
@@ -344,7 +348,7 @@ public final class Solution {
                .mapToInt(Integer::parseInt)
                .toArray();
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      args       The arguments
