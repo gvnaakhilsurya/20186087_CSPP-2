@@ -9,6 +9,9 @@ import java.util.Arrays;
      * { var_description }
      */
     private int[] list;
+    /**.
+     * { var_description }
+     */
     private int size;
     /**.
      * Constructs the object.
