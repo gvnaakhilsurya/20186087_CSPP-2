@@ -255,8 +255,7 @@ class SortedSet extends Set {
                 temp++;
             }
         }
-        if (result.length == 0) {
-
+        if (result.length <= 0) {
             throw new Exception("Set Empty Exception"); 
        }
         return Arrays.copyOf(result, temp);
@@ -269,7 +268,6 @@ class SortedSet extends Set {
     public int last() throws Exception {
         if (size() == 0) {
             //System.out.println("Set Empty Exception");
-
             throw new Exception("Set Empty Exception");
         }
         return super.get()[size() - 1];
