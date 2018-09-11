@@ -27,7 +27,7 @@ import java.util.Arrays;
     /**
      * Default constructor to create an array with the szie 10.
      */
-    public Set() {
+    Set() {
         set = new int[TEN];
         size = 0;
     }
