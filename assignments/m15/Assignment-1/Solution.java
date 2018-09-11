@@ -1,7 +1,6 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
-import java.lang.*;
  class List {
 
     private int[] list;
@@ -17,7 +16,7 @@ import java.lang.*;
         list = new int[ten];
         size = 0;
     }
-    public List(final int capacity) {
+     List(final int capacity) {
     /**.
      * { item_description }
      */
@@ -348,19 +347,27 @@ import java.lang.*;
     /*write the logic for clear.*/
         size = 0;
     }
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count(int item) {
 
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
-                count +=1; 
+                count += 1; 
             }
-            
         }
         return count;
     }
-
 }
+/**.
+ * { item_description }
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -403,7 +410,7 @@ public final class Solution {
                 if (tokens.length == 2) {
                     l.remove(Integer.parseInt(tokens[1]));
                 }
-                }catch(Exception e) {
+                } catch (Exception e) {
                     System.out.println("Invalid Position Exception");
                 }
             break;
@@ -458,7 +465,7 @@ public final class Solution {
                 if (object != null) {
                     System.out.println(object);
                 }
-            } catch(Exception e) {
+            } catch (Exception e) {
                 System.out.println("Index Out of Bounds Exception");
             }
                 break;
