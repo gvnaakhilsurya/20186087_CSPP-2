@@ -384,7 +384,9 @@ public final class Solution {
                     System.out.println(Arrays.toString(object).replace("[",
                         "{").replace("]", "}"));
                 }
-                } catch (Exception e) {System.out.println("Invalid Arguments to Subset Exception");}
+                } catch (Exception e) {
+                    System.out.println("Invalid Arguments to Subset Exception");
+                }
                 break;
             case "headSet":
             try {
@@ -396,7 +398,9 @@ public final class Solution {
                     System.out.println(Arrays.toString(obj).replace("[",
                         "{").replace("]", "}"));
                 }
-                } catch (Exception e) {System.out.println("Set Empty Exception");}
+                } catch (Exception e) {
+                    System.out.println("Set Empty Exception");
+                }
                 break;
             case "last":
             try {
@@ -406,7 +410,10 @@ public final class Solution {
                 }
                 int temp = s.last();
                 System.out.println(temp);
-                } catch (Exception e) {System.out.println("Set Empty Exception");}
+                } catch (Exception e) {
+
+                    System.out.println("Set Empty Exception");
+                }
                 break;
             case "addAll":
                 int[] intArr = intArray(tokens[1]);
