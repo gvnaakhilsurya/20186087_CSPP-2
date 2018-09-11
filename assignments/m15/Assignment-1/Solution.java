@@ -404,7 +404,7 @@ public final class Solution {
                     l.remove(Integer.parseInt(tokens[1]));
                 }
                 }catch(Exception e) {
-                    System.out.println(e.getMessage());
+                    System.out.println("Invalid Position Exception");
                 }
             break;
             case "indexOf":
@@ -445,7 +445,7 @@ public final class Solution {
                     }
                     l.removeAll(a);
                 }
-                } catch(Exception e) {System.out.println(e.getMessage());}
+                } catch(Exception e) {System.out.println("Invalid Position Exception");}
             break;
             case "subList":
             try {
@@ -459,7 +459,7 @@ public final class Solution {
                     System.out.println(object);
                 }
             } catch(Exception e) {
-                System.out.println(e);
+                System.out.println("Index Out of Bounds Exception");
             }
                 break;
             case "equals":
