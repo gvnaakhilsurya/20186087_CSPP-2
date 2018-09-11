@@ -368,7 +368,7 @@ public final class Solution {
     private Solution() {
 
     }
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws Exception {
     /**.
      * { item_description }
      */
