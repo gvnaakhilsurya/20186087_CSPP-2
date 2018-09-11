@@ -22,7 +22,7 @@ import java.util.Arrays;
     /**.
      * Constructs the object.
      */
-    public List() {
+     List() {
         /**.
          * { var_description }
          */
