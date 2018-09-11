@@ -227,10 +227,14 @@ class SortedSet extends Set {
     /**
      * subset.
      *
-     * @param      start  The start
-     * @param      end    The end
+     * { function_description }
      *
-     * @return     from start to end returns elements.
+     * @param      start      The start
+     * @param      end        The end
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int[] subSet(final int start, final int end) throws Exception {
         /**.
