@@ -445,7 +445,7 @@ public final class Solution {
                     }
                     l.removeAll(a);
                 }
-                } catch(Exception e) {System.out.println("Invalid Position Exception");}
+                } catch(Exception e) { }
             break;
             case "subList":
             try {
