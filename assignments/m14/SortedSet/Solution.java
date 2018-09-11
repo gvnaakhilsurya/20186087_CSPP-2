@@ -17,12 +17,12 @@ import java.util.Arrays;
     /**
      * holds the elemtns in this Set array.
      */
-    public int[] set;
+    private int[] set;
 
     /**
      * indicates the number of elememnts of this set.
      */
-    public int size;
+    private int size;
 
     /**
      * Default constructor to create an array with the szie 10.
@@ -38,15 +38,24 @@ import java.util.Arrays;
      * the size of the current set.
      * @param item to be inserted at the last.
      */
+    // public void add(final int item) {
+    //     if (size == set.length) {
+    //         resize();
+    //     }
+    //     if (!contains(item)) {
+    //         set[size++] = item;
+    //     }
+    // }
     public void add(final int item) {
-        if (size == set.length) {
-            resize();
-        }
         if (!contains(item)) {
             set[size++] = item;
         }
+        sort(set);
     }
 
+    public int[] get() {
+        return set;
+    }
     /**
      * resize the set by double, when it is full.
      */
@@ -93,6 +102,18 @@ import java.util.Arrays;
             s2.add(item);
         }
         return intersection(s2);
+    }
+    public void sort(final int[] array) {
+        int temp;
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
+                if (array[i] > array[j]) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
     }
 
     /**
@@ -184,29 +205,13 @@ class SortedSet extends Set {
      *
      * @param      array  The array
      */
-    public void sort(final int[] array) {
-        int temp;
-        for (int i = 0; i < size; i++) {
-            for (int j = i + 1; j < size; j++) {
-                if (array[i] > array[j]) {
-                    temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-            }
-        }
-    }
+
     /**
      * add function.
      *
      * @param      item  The item
      */
-    public void add(final int item) {
-        if (!contains(item)) {
-            set[size++] = item;
-        }
-        sort(set);
-    }
+
     /**
      * subset.
      *
@@ -220,13 +225,13 @@ class SortedSet extends Set {
             System.out.println("Invalid Arguments to Subset Exception");
             return null;
         }
-        int[] result = new int[size];
+        int[] result = new int[size()];
         int k = 0;
-        for (int i = 0; i < size; i++) {
-            if (set[i] >= start) {
-                for (int j = i; j < size; j++) {
-                    if (set[j] < end) {
-                        result[k++] = set[i];
+        for (int i = 0; i < size(); i++) {
+            if (super.get()[i] >= start) {
+                for (int j = i; j < size(); j++) {
+                    if (super.get()[j] < end) {
+                        result[k++] = super.get()[i];
                     }
                     break;
                 }
@@ -242,11 +247,11 @@ class SortedSet extends Set {
      * @return     returms elements.
      */
     public int[] headSet(final int end) {
-        int[] result = new int[size];
+        int[] result = new int[size()];
         int temp = 0;
-        for (int i = 0; i < size; i++) {
-            if (set[i] < end) {
-                result[i] = set[i];
+        for (int i = 0; i < size(); i++) {
+            if (super.get()[i] < end) {
+                result[i] = super.get()[i];
                 temp++;
             }
         }
@@ -258,11 +263,11 @@ class SortedSet extends Set {
      * @return     returns list of elements.
      */
     public int last() {
-        if (size == 0) {
+        if (size() == 0) {
             System.out.println("Set Empty Exception");
             return -1;
         }
-        return set[size - 1];
+        return super.get()[size() - 1];
     }
     /**
      * Adds all.
