@@ -16,6 +16,11 @@ import java.util.Arrays;
         list = new int[ten];
         size = 0;
     }
+    /**.
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
+     */
      List(final int capacity) {
     /**.
      * { item_description }
@@ -354,12 +359,12 @@ import java.util.Arrays;
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item) {
+    public int count(final int item) {
 
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
-                count += 1; 
+                count += 1;
             }
         }
         return count;
@@ -373,7 +378,9 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-
+        /**.
+         * { item_description }
+         */
     }
     public static void main(final String[] args) throws Exception {
     /**.
@@ -452,7 +459,7 @@ public final class Solution {
                     }
                     l.removeAll(a);
                 }
-                } catch(Exception e) { }
+                } catch (Exception e) { }
             break;
             case "subList":
             try {
