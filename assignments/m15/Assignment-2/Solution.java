@@ -261,12 +261,14 @@ class SortedSet extends Set {
         }
         return Arrays.copyOf(result, k);
     }
-    /**
-     * headset function.
+    /**.
+     * { function_description }
      *
-     * @param      end   The end
+     * @param      end        The end
      *
-     * @return     returms elements.
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int[] headSet(final int end) throws Exception {
         /**.
@@ -281,7 +283,7 @@ class SortedSet extends Set {
             }
         }
         if (temp == 0) {
-            throw new Exception("Set Empty Exception"); 
+            throw new Exception("Set Empty Exception");
        }
         return Arrays.copyOf(result, temp);
     }
@@ -328,6 +330,9 @@ public final class Solution {
      * @return     { int array from the given string }
      */
     public static int[] intArray(final String s) {
+        /**.
+         * { var_description }
+         */
         String input = s;
         if (input.equals("[]")) {
             return new int[0];
