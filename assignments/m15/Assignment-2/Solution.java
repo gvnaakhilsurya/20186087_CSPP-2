@@ -4,10 +4,7 @@ import java.util.Arrays;
 /**
  * Class for sorted set.
  */
-
-
  class Set {
-
     /**
      * This constant is used to create an array
      * with the initial capacity.
@@ -18,7 +15,6 @@ import java.util.Arrays;
      * holds the elemtns in this Set array.
      */
     private int[] set;
-
     /**
      * indicates the number of elememnts of this set.
      */
@@ -28,10 +24,15 @@ import java.util.Arrays;
      * Default constructor to create an array with the szie 10.
      */
     Set() {
+        /**.
+         * { item_description }
+         */
         set = new int[TEN];
         size = 0;
     }
-
+    /**.
+     * { item_description }
+     */
     /**
      * add the item to this set at the last.
      * If the set is full, resize the set to double
@@ -47,13 +48,24 @@ import java.util.Arrays;
     //     }
     // }
     public void add(final int item) {
+        /**.
+         * { item_description }
+         */
         if (!contains(item)) {
             set[size++] = item;
         }
         sort(set);
     }
-
-    public int[] get() {
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] get() 
+    /**.
+     * { item_description }
+     */
+    {
         return set;
     }
     /**
@@ -89,7 +101,6 @@ import java.util.Arrays;
         }
         return s1;
     }
-
     /**
      * retains all the elements from the set.
      * @param  newArray is a form of set2.
@@ -97,6 +108,9 @@ import java.util.Arrays;
      * of this set.
      */
     public Set retainAll(final int[] newArray) {
+        /**.
+         * { var_description }
+         */
         Set s2 = new Set();
         for (int item : newArray) {
             s2.add(item);
@@ -205,13 +219,11 @@ class SortedSet extends Set {
      *
      * @param      array  The array
      */
-
     /**
      * add function.
      *
      * @param      item  The item
      */
-
     /**
      * subset.
      *
@@ -221,6 +233,9 @@ class SortedSet extends Set {
      * @return     from start to end returns elements.
      */
     public int[] subSet(final int start, final int end) throws Exception {
+        /**.
+         * { item_description }
+         */
         if (start > end) {
             //System.out.println("Invalid Arguments to Subset Exception");
             throw new Exception("Invalid Arguments to Subset Exception"); 
@@ -247,6 +262,9 @@ class SortedSet extends Set {
      * @return     returms elements.
      */
     public int[] headSet(final int end) throws Exception {
+        /**.
+         * { var_description }
+         */
         int[] result = new int[size()];
         int temp = 0;
         for (int i = 0; i < size(); i++) {
