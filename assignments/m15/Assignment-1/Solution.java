@@ -1,8 +1,13 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**.
+ * List of .
+ */
  class List {
-
+    /**.
+     * { var_description }
+     */
     private int[] list;
     private int size;
     /**.
@@ -11,7 +16,13 @@ import java.util.Arrays;
      * @param      capacity  The capacity
      * 
      */
+    /**.
+     * Constructs the object.
+     */
     public List() {
+        /**.
+         * { var_description }
+         */
         final int ten = 10;
         list = new int[ten];
         size = 0;
@@ -28,6 +39,9 @@ import java.util.Arrays;
         list = new int[capacity];
         size = 0;
     }
+    /**.
+     * { item_description }
+     */
     /*
      * The add method does what the name suggests. Add an int item to the list.
      * The assumption is to store the item at the end of the list What is the
