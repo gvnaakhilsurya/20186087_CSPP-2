@@ -61,11 +61,11 @@ import java.util.Arrays;
      *
      * @return     { description_of_the_return_value }
      */
-    public int[] get() 
+    public int[] get() {
     /**.
      * { item_description }
      */
-    {
+    
         return set;
     }
     /**
@@ -118,6 +118,9 @@ import java.util.Arrays;
         return intersection(s2);
     }
     public void sort(final int[] array) {
+        /**.
+         * { var_description }
+         */
         int temp;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
@@ -282,10 +285,12 @@ class SortedSet extends Set {
        }
         return Arrays.copyOf(result, temp);
     }
-    /**
-     * last function.
+    /**.
+     * { function_description }
      *
-     * @return     returns list of elements.
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int last() throws Exception {
         if (size() == 0) {
@@ -305,7 +310,7 @@ class SortedSet extends Set {
         }
     }
 }
-/**
+/**.
  * Solution class.
  */
 public final class Solution {
@@ -315,7 +320,7 @@ public final class Solution {
     private Solution() {
 
     }
-    /**
+    /**.
      * helper function to convert string input to int array.
      *
      * @param      s     { string input from test case file }
@@ -335,9 +340,11 @@ public final class Solution {
                .toArray();
     }
     /**
-     * main function to execute test cases.
+     * { function_description }
      *
-     * @param      args  The arguments
+     * @param      args       The arguments
+     *
+     * @throws     Exception  { exception_description }
      */
     public static void main(final String[] args) throws Exception {
         // instantiate this set
