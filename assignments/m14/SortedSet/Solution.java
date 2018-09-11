@@ -179,6 +179,27 @@ import java.util.Arrays;
  * Class for sorted set.
  */
 class SortedSet extends Set {
+
+
+    public static final int TEN = 10;
+
+    /**
+     * holds the elemtns in this Set array.
+     */
+    public int[] set;
+
+    /**
+     * indicates the number of elememnts of this set.
+     */
+    public int size;
+
+    /**
+     * Default constructor to create an array with the szie 10.
+     */
+    public SortedSet() {
+        set = new int[TEN];
+        size = 0;
+    }
     /**
      * sort function.
      *
