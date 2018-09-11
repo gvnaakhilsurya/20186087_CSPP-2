@@ -14,7 +14,7 @@ import java.util.Arrays;
      * Constructs the object.
      *
      * @param      capacity  The capacity
-     * 
+     *
      */
     /**.
      * Constructs the object.
@@ -396,6 +396,13 @@ public final class Solution {
          * { item_description }
          */
     }
+    /**.
+     * { function_description }
+     *
+     * @param      args       The arguments
+     *
+     * @throws     Exception  { exception_description }
+     */
     public static void main(final String[] args) throws Exception {
     /**.
      * { item_description }
