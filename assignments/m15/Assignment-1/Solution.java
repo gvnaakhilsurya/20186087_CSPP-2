@@ -119,7 +119,9 @@ import java.util.Arrays;
     /**.
      * { function_description }
      *
-     * @param      index  The index
+     * @param      index      The index
+     *
+     * @throws     Exception  { exception_description }
      */
     public void remove(final int index) throws Exception {
         /**.
@@ -273,10 +275,12 @@ import java.util.Arrays;
      Removes all of its elements that are contained in the specified int
      array.
     */
-     /**.
-      * Removes all.
+     /**
+      *Removes all.
       *
-      * @param      newArray  The new array
+      * @param      newArray   The new array
+      *
+      * @throws     Exception  { exception_description }
       */
      public void removeAll(final int[] newArray) throws Exception {
         /**.
@@ -302,10 +306,12 @@ import java.util.Arrays;
     /**.
      * { function_description }
      *
-     * @param      start  The start
-     * @param      end    The end
+     * @param      start      The start
+     * @param      end        The end
      *
      * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public List subList(final int start, final int end) throws Exception {
 
