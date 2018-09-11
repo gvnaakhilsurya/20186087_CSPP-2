@@ -17,17 +17,17 @@ import java.util.Arrays;
     /**
      * holds the elemtns in this Set array.
      */
-    private int[] set;
+    public int[] set;
 
     /**
      * indicates the number of elememnts of this set.
      */
-    private int size;
+    public int size;
 
     /**
      * Default constructor to create an array with the szie 10.
      */
-    Set() {
+    public Set() {
         set = new int[TEN];
         size = 0;
     }
