@@ -55,11 +55,11 @@ class Patron {
        
 }
 class BookYourShow {
-    Show[]movielist;
+    Show[]movielist = new Show[20];
     int movielistsize = 0;
-    Patron[] patronlist;
+    Patron[] patronlist = new Patron[20];
     int patronsize;
-    String[]availableseats;
+    String[]availableseats = new String[20];
 
     void addAShow(Show k) {
         movielist[movielistsize++]=k;
