@@ -67,17 +67,17 @@ public final class Solution {
         else{
             System.out.println(questionCount + "are added to the quiz");
         }
-        String s1 = s.nextLine();
-        String[] question = s1.split(":");
-        System.out.println();
-        for (int i = 0;i < question.length;i++) {
-            cnt ++;
+        // String s1 = s.nextLine();
+        // String[] question = s1.split(":");
+        // System.out.println();
+        // for (int i = 0;i < question.length;i++) {
+        //     cnt ++;
             
-        }
-        if (question.length < 3) {
-            System.out.println("Error! Malformed question");
+        // }
+        // if (question.length < 3) {
+        //     System.out.println("Error! Malformed question");
             
-        }
+        // }
         // tokenize the question line and create the question object
     
         // add the question objects to the quiz class
