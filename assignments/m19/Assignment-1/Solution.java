@@ -70,6 +70,7 @@ public final class Solution {
         String s1 = s.nextLine();
         String[] question = s1.split(":");
         // add the question objects to the quiz class
+        
 
 
     }
@@ -84,22 +85,8 @@ public final class Solution {
      */
     public static void startQuiz(final Scanner s, final Quiz quiz, final int answerCount) {
         // write your code here to display the quiz questions
-        String s1 = s.nextLine();
-        String s3 ="";
-        String[] question = s1.split(":");
-        for (int i =0; i<question.length;i++) {
-            System.out.println(question[0]);
-                
-        //     }
-        //     String s2[] = question[1].split(",");
-        //     for (int j = 0;j < s2.length-1;j++) {
-        //         s3 = s3 + question[j] + "       ";  
-        //     }
-        //     System.out.println(s3);
-
-         }
         // read the user responses from the console
-        // store the user respones in the quiz object.
+        // store the user respones in the quiz object
     }
 
     /**
