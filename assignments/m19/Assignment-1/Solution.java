@@ -68,7 +68,7 @@ public final class Solution {
         }
         String s1 = s.nextLine();
         String[] question = s1.split(":");
-        if (question.length <5) {
+        if (question.length < 5) {
             System.out.println("Error! Malformed question");
             
         }
