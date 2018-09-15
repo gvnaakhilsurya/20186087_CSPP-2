@@ -88,6 +88,8 @@ class BookYourShow {
             String[] availableseats = getAShow(mn,dt).getseats();
             for (int i = 0;i < ct.length;i++) {
                 for (int j = 0;j < availableseats.length;i++) {
+                	System.out.println(availableseats[j]);
+                	System.out.println(ct[i]);
                     if (ct[i].equals(availableseats[j])) {
                         getAShow(mn,dt).setseats("N/A");
                         count++;                                 
