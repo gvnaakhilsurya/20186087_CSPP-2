@@ -89,13 +89,15 @@ public final class Solution {
         String[] question = s1.split(":");
         for (int i =0; i<question.length;i++) {
             System.out.println(question[0]);
-            String s2[] = question[1].split(",");
-            for (int j = 0;j < s2.length-1;j++) {
-                s3 = s3 + question[j] + "       ";  
-            }
-            System.out.println(s3);
+                
+        //     }
+        //     String s2[] = question[1].split(",");
+        //     for (int j = 0;j < s2.length-1;j++) {
+        //         s3 = s3 + question[j] + "       ";  
+        //     }
+        //     System.out.println(s3);
 
-        }
+         }
         // read the user responses from the console
         // store the user respones in the quiz object.
     }
