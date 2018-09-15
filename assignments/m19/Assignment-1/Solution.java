@@ -60,6 +60,7 @@ public final class Solution {
      */
     public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
         // write your code here to read the questions from the console
+        int cnt = 0;
         if (questionCount <= 0) {
             System.out.println("Quiz does not have questions");
         }
@@ -68,7 +69,12 @@ public final class Solution {
         }
         String s1 = s.nextLine();
         String[] question = s1.split(":");
-        if (question.length < 5) {
+        System.out.println();
+        for (int i = 0;i < question.length;i++) {
+            cnt ++;
+            
+        }
+        if (question.length < 3) {
             System.out.println("Error! Malformed question");
             
         }
