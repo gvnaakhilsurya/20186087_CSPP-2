@@ -66,6 +66,12 @@ public final class Solution {
         else{
             System.out.println(questionCount + "are added to the quiz");
         }
+        String s1 = s.nextLine();
+        String[] question = s1.split(":");
+        if (question.length != 5) {
+            System.out.println("Error! Malformed question");
+            
+        }
         // tokenize the question line and create the question object
     
         // add the question objects to the quiz class
