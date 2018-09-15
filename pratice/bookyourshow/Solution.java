@@ -68,6 +68,7 @@ class BookYourShow {
         for (int i = 0; i<movielist.length;i++) {
             if ((movielist[i].getmoviename()).equals(mn)) {
                 if (movielist[i].getdateandtime().equals(dt)) {
+                	System.out.println(movielist[i]);
                     return movielist[i];          
                 }
                     
