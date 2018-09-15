@@ -80,6 +80,10 @@ class BookYourShow {
     }
     void bookAShow(String mn,String dt,Patron p, String[] ct) {
         int  count = 0;
+        if (getAShow(mn,dt) == null) {
+        	System.out.println("No show");
+        	return;
+        }
         if (getAShow(mn,dt) !=null) {
             String[] availableseats = getAShow(mn,dt).getseats();
             for (int i = 0;i < ct.length;i++) {
