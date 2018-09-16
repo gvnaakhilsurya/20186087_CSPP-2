@@ -279,6 +279,21 @@ class ShoppingCart {
  * Class for solution.
  */
 class Solution {
+    /**.
+     * Constructs the object.
+     */
+
+    Solution() {
+        /**.
+         * { item_description }
+         */
+
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         ShoppingCart s = new ShoppingCart();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
