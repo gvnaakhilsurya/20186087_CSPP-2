@@ -239,7 +239,7 @@ class ShoppingCart {
         final float twof = 0.2f;
         final float thref = 0.3f;
         final float fivf = 0.5f;
-        if (flag == false) {
+        if (flag) {
             if (coupon.equals("IND10")) {
                 couponcode = onef;
             } else if (coupon.equals("IND20")) {
