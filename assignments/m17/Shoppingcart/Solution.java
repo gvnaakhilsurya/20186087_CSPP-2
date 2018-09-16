@@ -220,10 +220,12 @@ class ShoppingCart {
      * @return     The payable amount.
      */
     public float getPayableAmount() {
+        final int cent = 100;
+        final int fift = 15;
         float totalAmount = totalAmount();
         float discount = totalAmount * couponcode;
         float finalAmount = totalAmount - discount;
-        float payableAmount = finalAmount + (finalAmount * 15 / 100);
+        float payableAmount = finalAmount + (finalAmount * fift / cent);
         return payableAmount;
     }
 
