@@ -233,15 +233,19 @@ class ShoppingCart {
      * @param      coupon  The coupon
      */
     public void applyCoupon(final String coupon) {
+        float onef = 0.1f;
+        float twof = 0.2f;
+        float thref = 0.3f;
+        float fivf = 0.5f;
         if (flag == false) {
             if (coupon.equals("IND10")) {
-                couponcode = 0.1f;
+                couponcode = onef;
             } else if (coupon.equals("IND20")) {
-                couponcode = 0.2f;
+                couponcode = twof;
             } else if (coupon.equals("IND30")) {
-                couponcode = 0.3f;
+                couponcode = thref;
             } else if (coupon.equals("IND50")) {
-                couponcode = 0.5f;
+                couponcode = fivf;
             } else {
                 System.out.println("Invalid coupon");
                 return;
@@ -253,6 +257,8 @@ class ShoppingCart {
      * { function_description }.
      */
     public void printInvoice() {
+        final int cent = 100;
+        final int fift = 15;
         System.out.println("Name   quantity   Price");
         for (int i = 0; i < cartSize; i++) {
             for (int j = 0; j < catalogSize; j++) {
@@ -269,7 +275,7 @@ class ShoppingCart {
         float discount = totalAmount() * couponcode;
         System.out.println("Disc%:" + discount);
         float finalAmount = totalAmount() - discount;
-        System.out.println("Tax:" + (finalAmount * 15 / 100));
+        System.out.println("Tax:" + (finalAmount * fift / cent));
         System.out.println("Payable amount: " + getPayableAmount());
     }
 
@@ -283,7 +289,7 @@ class Solution {
      * Constructs the object.
      */
 
-    Solution() {
+    private Solution() {
         /**.
          * { item_description }
          */
