@@ -91,7 +91,7 @@ class ShoppingCart {
     /**
      * { var_description }.
      */
-    private final int TEMP = 100;
+    private final int temp = 100;
     /**
      *  catalog size.
      */
@@ -121,8 +121,8 @@ class ShoppingCart {
      * Constructs the object.
      */
     ShoppingCart() {
-        catalog = new Item[TEMP];
-        cart = new Item[TEMP];
+        catalog = new Item[temp];
+        cart = new Item[temp];
         catalogSize = 0;
         cartSize = 0;
         flag = false;
@@ -286,7 +286,7 @@ class ShoppingCart {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**.
      * Constructs the object.
      */
