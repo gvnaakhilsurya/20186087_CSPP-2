@@ -233,10 +233,10 @@ class ShoppingCart {
      * @param      coupon  The coupon
      */
     public void applyCoupon(final String coupon) {
-        float onef = 0.1f;
-        float twof = 0.2f;
-        float thref = 0.3f;
-        float fivf = 0.5f;
+        final float onef = 0.1f;
+        final float twof = 0.2f;
+        final float thref = 0.3f;
+        final float fivf = 0.5f;
         if (flag == false) {
             if (coupon.equals("IND10")) {
                 couponcode = onef;
