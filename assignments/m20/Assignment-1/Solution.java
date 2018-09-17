@@ -242,7 +242,7 @@ public final class Solution {
         }
         // tokenize the question line and create the question object
          String s1 = scan.nextLine();
-         String []question = s1.split("");
+         String []question = s1.split(":");
          String []choices = s1.split(",");
          System.out.println(s1);
 
