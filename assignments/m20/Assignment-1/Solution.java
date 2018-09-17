@@ -42,9 +42,29 @@ class Question {
      * @param      maxMarks1       The maximum marks 1
      * @param      penalty1        The penalty 1
      */
-    Question(final String question1, final String[] choices1,
-        final int correctAnswer1, final int maxMarks1, final int penalty1) {
+    Question(final String quesno, final String[] ches,
+        final int crtans, final int mmrks, final int penal) {
 
+    	questiontext = quesno;
+    	choices = ches;
+    	correctAnswer = crtans;
+    	maxMarks = mmrks;
+    	penalty = penal;
+    }
+    public String getquestiontext() {
+    	return questiontext;
+    }
+    public String[] getchoices() {
+    	return choices;
+    }
+    public int getcorrectAnswer() {
+    	return correctAnswer;
+    }
+    public int getmaxMarks() {
+    	return maxMarks;
+    }
+    public int getpenality() {
+    	return penalty;
     }
     /**
      * { function_description }.
@@ -180,6 +200,10 @@ public final class Solution {
      /**
      * Constructs the object.
      */
+     static int FLAG = 1;
+     /**.
+      * Constructs the object.
+      */
     private Solution() {
         // leave this blank
     }
@@ -233,21 +257,25 @@ public final class Solution {
      *
      */
     public static void loadQuestions(final Scanner scan,
-        final Quiz quiz, final int q) {
+        final Quiz quiz, final int questioncount) {
         // write your code here to read the questions from the console
-        // tokenize the question line and create the question object
-        if ( q == 0) {
-            System.out.println("Quiz does not have questions");
-        } else {
-            System.out.println(q + "are added to the quiz");
+        if (questioncount == 0) {
+        	System.out.println("Quiz does not have questions");
         }
-        String s1 = scan.nextLine();
-        String []question = s1.split(":");
-        String []choices = question[1].split(",");
-        if (choices.length <2) {
-            System.out.println("trick question  does not have enough answer choices");  
-        }
+        for (int i = 0; i < questioncount; i++) {
+        	 String[] tokens1 = scan.nextLine().split(":");
+        	 String[] choices = tokens1[1].split(",");
+        	 if (choices.length == 1) {
+        	 	System.out.println(tokens1[0] + " does not have enough answer choices");
+        	 	
+        	 }
 
+
+        	
+        }
+        
+        // tokenize the question line and create the question object
+        // add the question objects to the quiz class
     }
     /**
      * Starts a quiz.
