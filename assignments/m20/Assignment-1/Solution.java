@@ -235,11 +235,6 @@ public final class Solution {
     public static void loadQuestions(final Scanner scan,
         final Quiz quiz, final int q) {
         // write your code here to read the questions from the console
-        if ( q <= 0) {
-            System.out.println("Quiz does not have questions");
-        } else {
-            System.out.println(q + "are added to the quiz");
-        }
         // tokenize the question line and create the question object
          String s1 = scan.nextLine();
          String []question = s1.split(":");
@@ -247,6 +242,11 @@ public final class Solution {
          if (choices.length <2) {
             System.out.println("question text does not have enough choices");  
          }
+         if ( q <= 0) {
+            System.out.println("Quiz does not have questions");
+        } else {
+            System.out.println(q + "are added to the quiz");
+        }
          // for (int i = 0;i < choices.length;i++) {
             
          // }
