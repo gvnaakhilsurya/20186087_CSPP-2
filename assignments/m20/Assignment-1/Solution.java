@@ -236,17 +236,18 @@ public final class Solution {
         final Quiz quiz, final int q) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
-         // String s1 = scan.nextLine();
-         // String []question = s1.split(":");
-         // String []choices = question[1].split(",");
-         // if (choices.length <2) {
-         //    System.out.println("trick question  does not have enough answer choices");  
-         // }
-         if ( q <= 0) {
+        if ( q == 0) {
             System.out.println("Quiz does not have questions");
         } else {
             System.out.println(q + "are added to the quiz");
         }
+         String s1 = scan.nextLine();
+         String []question = s1.split(":");
+         String []choices = question[1].split(",");
+         if (choices.length <2) {
+            System.out.println("trick question  does not have enough answer choices");  
+         }
+         
          // for (int i = 0;i < choices.length;i++) {
             
          // }
