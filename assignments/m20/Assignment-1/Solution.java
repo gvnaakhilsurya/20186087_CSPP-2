@@ -244,7 +244,7 @@ public final class Solution {
          String s1 = scan.nextLine();
          String []question = s1.split(":");
          String []choices = question[1].split(",");
-         if (choices.length >=2) {
+         if (choices.length <2) {
             System.out.println("question text does not have enough choices");  
          }
          // for (int i = 0;i < choices.length;i++) {
