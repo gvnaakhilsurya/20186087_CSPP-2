@@ -241,7 +241,13 @@ public final class Solution {
         } else {
             System.out.println(q + "are added to the quiz");
         }
-         
+        String s1 = scan.nextLine();
+        String []question = s1.split(":");
+        String []choices = question[1].split(",");
+        if (choices.length <2) {
+            System.out.println("trick question  does not have enough answer choices");  
+        }
+
     }
     /**
      * Starts a quiz.
