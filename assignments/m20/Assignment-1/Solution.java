@@ -243,12 +243,15 @@ public final class Solution {
         // tokenize the question line and create the question object
          String s1 = scan.nextLine();
          String []question = s1.split(":");
-         String []choices = s1.split(",");
-         System.out.println(s1);
-
-
-
-    
+         String []choices = question[1].split(",");
+         if (choices.length >=2) {
+            System.out.println("question text does not have enough choices");  
+         }
+         // for (int i = 0;i < choices.length;i++) {
+            
+         // }
+         // System.out.println(question);
+         // System.out.println(choices);
         // add the question objects to the quiz class
     }
     /**
