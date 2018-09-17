@@ -239,9 +239,9 @@ public final class Solution {
          String s1 = scan.nextLine();
          String []question = s1.split(":");
          String []choices = question[1].split(",");
-         if (choices.length <2) {
-            System.out.println("question text does not have enough choices");  
-         }
+         // if (choices.length <2) {
+         //    System.out.println("trick question  does not have enough answer choices");  
+         // }
          if ( q <= 0) {
             System.out.println("Quiz does not have questions");
         } else {
