@@ -62,10 +62,30 @@ class Task{
 	public void setstatus(String  status){
 	    this.status = status;
 	}
+	public void Isimportant(){
+
+		if (getimportant()==true) {
+			System.out.println("Important");
+		}
+		else{
+			System.out.println("Not Important");	
+			}
+		}
+	public void Isurgent(){
+
+		if (geturgent()==true) {
+			System.out.println("Urgent");
+		}
+		else{
+			System.out.println(" Not Urgent");	
+			}
+
+	
+	}
 
 	public String toString() {
         String str = "";
-        str = str + title +"," + assignedTo +","+ timeToComplete +","+ important +","+ urgent+","+status;
+        str = str + title +"," + assignedTo +","+ timeToComplete +","+important +","+urgent+","+status;
         return str;
     }
 }
@@ -159,11 +179,22 @@ public class TodoistMain {
      */
     public static Task createTask(final String[] tokens) throws Exception {
         String title = tokens[1];
+        if (!tokens[0].equals("task")) {
+        	System.out.println("Title not provided");
+        }
         String assignedTo = tokens[2];
         int timeToComplete = Integer.parseInt(tokens[3]);
+        if (timeToComplete<0) {
+        	System.out.println("Invalid timeToComplete<time value>");
+        }
         boolean important = tokens[4].equals("y");
         boolean urgent = tokens[5].equals("y");
         String status = tokens[6];
+        if (tokens[6].equals("todo") || (tokens[6].equals("done")) ) {
+        	System.out.println("Invalid status value");
+        	
+        }
+
         return new Task(
             title, assignedTo, timeToComplete, important, urgent, status);
     }
