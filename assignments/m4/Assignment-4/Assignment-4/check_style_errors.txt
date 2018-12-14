@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] H:\20186087_CSPP-2\assignments\m4\Assignment-4\Assignment-4\Solution.java:22:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 1 errors.
