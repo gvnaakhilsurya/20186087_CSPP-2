@@ -18,11 +18,9 @@ public class Hotel{
 			for ( i = 1;i < reservations.length;i++) {
 				reservations[i] = reve;
 			}
-			return i;
-		}
-		return -1;
-		
 
+		}
+		return i;
 	}
 	public boolean reserveRoom(String person,int roomNum){
 
