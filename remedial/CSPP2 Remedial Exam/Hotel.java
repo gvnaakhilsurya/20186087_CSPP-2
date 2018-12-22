@@ -19,14 +19,19 @@ public class Hotel{
 				reservations[i] = rev;
 			}
 			return i;
-
 		}
 		return 0;
 		
 	}
 	public boolean reserveRoom(String person,int roomNum){
+		Reservation rev = new Reservation(person,roomNum);
+		if (reservations[roomNum] == null) {
+			reservations[roomNum] = rev;
+			return true;
+		}
+		return false;
 
-		return true;
+		
 	}
 	public void printReservations(){
 		String str = "";
