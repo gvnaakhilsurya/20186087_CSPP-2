@@ -17,6 +17,7 @@ karan 3
 murthy 0
 rajiv 5
 kalyani 0
+null 0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -40,6 +41,7 @@ rajiv 0
 kalyani 0
 kumar 0
 swathi 0
+null 0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -65,6 +67,7 @@ kalyani 0
 kumar 0
 swathi 0
 alekhya 5
+null 0
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -90,6 +93,7 @@ kalyani 0
 kumar 0
 swathi 0
 alekhya 5
+null 0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -120,6 +124,7 @@ kumar 0
 swathi 0
 alekhya 6
 manasa 0
+null 0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -153,12 +158,14 @@ kiran 2
 murthy 1
 kumar 0
 kumar 3
+null 0
 alekhya 6
 manasa 0
 kumar 0
 karthik 0
 manohar 0
 kumar 0
+null 0
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -197,9 +204,12 @@ rajiv 2
 kalyani 0
 kumar 0
 swathi 0
+null 0
+null 0
 alekhya 6
 manasa 0
 kumar 0
+null 0
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -243,6 +253,8 @@ rajiv 2
 kalyani 0
 kumar 0
 kumar 0
+null 0
+null 0
 alekhya 6
 manasa 0
 kumar 0
@@ -250,5 +262,6 @@ karthik 0
 manohar 0
 swetha 0
 reddy 0
+null 0
 ----------------------------------------
 

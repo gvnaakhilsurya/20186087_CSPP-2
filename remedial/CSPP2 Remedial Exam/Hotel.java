@@ -1,6 +1,7 @@
 public class Hotel{
 	private Reservation[]reservations;
 	private int size;
+	Reservation rev = new Reservation();
 
 	public Hotel(){
 		reservations = new Reservation[5];
@@ -28,7 +29,9 @@ public class Hotel{
 		return true;
 	}
 	public void printReservations(){
-
+		String str = "";
+		str += rev.getpersonName() +" " +rev.getroomNumber();
+		System.out.println(str);
 	}
 
 
