@@ -17,7 +17,6 @@ public class Hotel{
 		if (size < reservations.length) {
 			for ( i = 1;i < reservations.length;i++) {
 				reservations[i] = rev;
-				i = i + 1;
 			return i;
 			}
 			

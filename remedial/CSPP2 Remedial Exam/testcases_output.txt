@@ -12,11 +12,11 @@ kalyani 4
 rajiv 5
 
 Your Output: 
-rehana 2
+rehana 1
 karan 3
-murthy 2
+murthy 1
 rajiv 5
-kalyani 2
+kalyani 1
 kalyani 0kalyani 0kalyani 0kalyani 0kalyani 0
 ----------------------------------------
 
@@ -37,10 +37,10 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
-kalyani 2
-kumar 2
-swathi 2
+rajiv 1
+kalyani 1
+kumar 1
+swathi 1
 swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
 
@@ -62,10 +62,10 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
-kalyani 2
-kumar 2
-swathi 2
+rajiv 1
+kalyani 1
+kumar 1
+swathi 1
 alekhya 5
 swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
@@ -89,9 +89,9 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 2
-kumar 2
-swathi 2
+kalyani 1
+kumar 1
+swathi 1
 alekhya 5
 swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
@@ -119,11 +119,11 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 2
-kumar 2
-swathi 2
+kalyani 1
+kumar 1
+swathi 1
 alekhya 6
-manasa 2
+manasa 1
 manasa 0manasa 0manasa 0manasa 0manasa 0
 ----------------------------------------
 
@@ -156,15 +156,15 @@ kumar 9
 Your Output: 
 kiran 2
 murthy 1
-kumar 2
+kumar 1
 kumar 3
 kumar 0kumar 0kumar 0kumar 0kumar 0
 alekhya 6
-manasa 2
-kumar 2
-karthik 2
-manohar 2
-kumar 2
+manasa 1
+kumar 1
+karthik 1
+manohar 1
+kumar 1
 kumar 0kumar 0kumar 0kumar 0kumar 0
 ----------------------------------------
 
@@ -201,14 +201,14 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 2
-kumar 2
-swathi 2
+kalyani 1
+kumar 1
+swathi 1
 swathi 0swathi 0swathi 0swathi 0swathi 0
 swathi 0swathi 0swathi 0swathi 0swathi 0
 alekhya 6
-manasa 2
-kumar 2
+manasa 1
+kumar 1
 kumar 0kumar 0kumar 0kumar 0kumar 0
 ----------------------------------------
 
@@ -250,18 +250,18 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 2
-kumar 2
-kumar 2
+kalyani 1
+kumar 1
+kumar 1
 kumar 0kumar 0kumar 0kumar 0kumar 0
 kumar 0kumar 0kumar 0kumar 0kumar 0
 alekhya 6
-manasa 2
-kumar 2
-karthik 2
-manohar 2
-swetha 2
-reddy 2
+manasa 1
+kumar 1
+karthik 1
+manohar 1
+swetha 1
+reddy 1
 reddy 0reddy 0reddy 0reddy 0reddy 0
 ----------------------------------------
 
