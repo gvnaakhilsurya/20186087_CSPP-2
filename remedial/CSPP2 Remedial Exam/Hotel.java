@@ -12,24 +12,26 @@ public class Hotel{
 	}
 
 	public int reserveRoom(String person){
-		Reservation rev = new Reservation(person);
+		rev = new Reservation(person);
 		int i = 1;
 		if (size < reservations.length) {
 			for ( i = 1;i < reservations.length;i++) {
 				reservations[i] = rev;
-			}
+				i = i + 1;
 			return i;
+			}
+			
 		}
-		return 0;
+		return -1;
 		
 	}
 	public boolean reserveRoom(String person,int roomNum){
-		Reservation rev = new Reservation(person,roomNum);
-		if (reservations[roomNum] == null && roomNum < reservations.length) {
-			reservations[roomNum] = rev;
-			return true;
-		}
-		return false;
+		// Reservation rev = new Reservation(person,roomNum);
+		// if (reservations[roomNum] == null && roomNum < reservations.length) {
+		// 	reservations[roomNum] = rev;
+		// 	return false;
+		// }
+		return true;
 
 		
 	}
