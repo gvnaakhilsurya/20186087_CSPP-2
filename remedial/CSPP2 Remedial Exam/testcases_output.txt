@@ -18,6 +18,10 @@ murthy 2
 rajiv 5
 kalyani 2
 kalyani 0
+kalyani 0kalyani 0
+kalyani 0kalyani 0kalyani 0
+kalyani 0kalyani 0kalyani 0kalyani 0
+kalyani 0kalyani 0kalyani 0kalyani 0kalyani 0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -42,6 +46,10 @@ kalyani 2
 kumar 2
 swathi 2
 swathi 0
+swathi 0swathi 0
+swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -68,6 +76,10 @@ kumar 2
 swathi 2
 alekhya 5
 swathi 0
+swathi 0swathi 0
+swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -94,6 +106,10 @@ kumar 2
 swathi 2
 alekhya 5
 swathi 0
+swathi 0swathi 0
+swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0swathi 0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -125,6 +141,10 @@ swathi 2
 alekhya 6
 manasa 2
 manasa 0
+manasa 0manasa 0
+manasa 0manasa 0manasa 0
+manasa 0manasa 0manasa 0manasa 0
+manasa 0manasa 0manasa 0manasa 0manasa 0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -159,6 +179,10 @@ murthy 1
 kumar 2
 kumar 3
 kumar 0
+kumar 0kumar 0
+kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0kumar 0
 alekhya 6
 manasa 2
 kumar 2
@@ -166,6 +190,10 @@ karthik 2
 manohar 2
 kumar 2
 kumar 0
+kumar 0kumar 0
+kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0kumar 0
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -205,11 +233,23 @@ kalyani 2
 kumar 2
 swathi 2
 swathi 0
+swathi 0swathi 0
+swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0swathi 0
 swathi 0
+swathi 0swathi 0
+swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0
+swathi 0swathi 0swathi 0swathi 0swathi 0
 alekhya 6
 manasa 2
 kumar 2
 kumar 0
+kumar 0kumar 0
+kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0kumar 0
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -254,7 +294,15 @@ kalyani 2
 kumar 2
 kumar 2
 kumar 0
+kumar 0kumar 0
+kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0kumar 0
 kumar 0
+kumar 0kumar 0
+kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0
+kumar 0kumar 0kumar 0kumar 0kumar 0
 alekhya 6
 manasa 2
 kumar 2
@@ -263,5 +311,9 @@ manohar 2
 swetha 2
 reddy 2
 reddy 0
+reddy 0reddy 0
+reddy 0reddy 0reddy 0
+reddy 0reddy 0reddy 0reddy 0
+reddy 0reddy 0reddy 0reddy 0reddy 0
 ----------------------------------------
 

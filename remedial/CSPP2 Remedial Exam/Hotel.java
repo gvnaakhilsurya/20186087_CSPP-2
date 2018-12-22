@@ -37,9 +37,11 @@ public class Hotel{
 	}
 	public void printReservations(){
 		String str = "";
+		for(int i = 0;i< reservations.length;i++){
 		str += rev.getpersonName() +" " +rev.getroomNumber();
 		System.out.println(str);
 	}
-
+	
+	}
 
 }

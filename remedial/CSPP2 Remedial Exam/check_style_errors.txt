@@ -33,10 +33,16 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:38:9: Class 'Hotel' looks like designed for extension (can be subclassed), but the method 'printReservations' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Hotel' final or making the method 'printReservations' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:38:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:38:40: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:45: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:50: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:31: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:32: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:54: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:40:58: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:41:45: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:41:50: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Hotel.java:44: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Reservation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_CSPP-2\remedial\CSPP2 Remedial Exam\Reservation.java:5: Missing a Javadoc comment. [JavadocType]
