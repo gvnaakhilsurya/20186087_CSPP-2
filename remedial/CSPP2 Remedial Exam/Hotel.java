@@ -25,7 +25,7 @@ public class Hotel{
 	}
 	public boolean reserveRoom(String person,int roomNum){
 		Reservation rev = new Reservation(person,roomNum);
-		if (reservations[roomNum] == null) {
+		if (reservations[roomNum] == null && roomNum < reservations.length) {
 			reservations[roomNum] = rev;
 			return true;
 		}
