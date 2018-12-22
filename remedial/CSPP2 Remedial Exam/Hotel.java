@@ -12,15 +12,15 @@ public class Hotel{
 	}
 
 	public int reserveRoom(String person){
-		// Reservation reve = new Reservation(person);
-		// int i = 1;
-		// if (size < reservations.length) {
-		// 	for ( i = 1;i < reservations.length;i++) {
-		// 		reservations[i] = reve;
-		// 	}
-		// 	return i;
+		Reservation rev = new Reservation(person);
+		int i = 1;
+		if (size < reservations.length) {
+			for ( i = 1;i < reservations.length;i++) {
+				reservations[i] = rev;
+			}
+			return i;
 
-		// }
+		}
 		return 0;
 		
 	}

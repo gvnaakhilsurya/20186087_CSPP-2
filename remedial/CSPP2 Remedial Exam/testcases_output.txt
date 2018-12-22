@@ -12,11 +12,11 @@ kalyani 4
 rajiv 5
 
 Your Output: 
-rehana 0
+rehana 5
 karan 3
-murthy 0
+murthy 5
 rajiv 5
-kalyani 0
+kalyani 5
 null 0
 ----------------------------------------
 
@@ -37,10 +37,10 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 0
-kalyani 0
-kumar 0
-swathi 0
+rajiv 5
+kalyani 5
+kumar 5
+swathi 5
 null 0
 ----------------------------------------
 
@@ -62,10 +62,10 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 0
-kalyani 0
-kumar 0
-swathi 0
+rajiv 5
+kalyani 5
+kumar 5
+swathi 5
 alekhya 5
 null 0
 ----------------------------------------
@@ -89,9 +89,9 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 0
-kumar 0
-swathi 0
+kalyani 5
+kumar 5
+swathi 5
 alekhya 5
 null 0
 ----------------------------------------
@@ -119,11 +119,11 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 0
-kumar 0
-swathi 0
+kalyani 5
+kumar 5
+swathi 5
 alekhya 6
-manasa 0
+manasa 5
 null 0
 ----------------------------------------
 
@@ -156,15 +156,15 @@ kumar 9
 Your Output: 
 kiran 2
 murthy 1
-kumar 0
+kumar 5
 kumar 3
 null 0
 alekhya 6
-manasa 0
-kumar 0
-karthik 0
-manohar 0
-kumar 0
+manasa 5
+kumar 5
+karthik 5
+manohar 5
+kumar 5
 null 0
 ----------------------------------------
 
@@ -201,14 +201,14 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 0
-kumar 0
-swathi 0
+kalyani 5
+kumar 5
+swathi 5
 null 0
 null 0
 alekhya 6
-manasa 0
-kumar 0
+manasa 5
+kumar 5
 null 0
 ----------------------------------------
 
@@ -250,18 +250,18 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 2
-kalyani 0
-kumar 0
-kumar 0
+kalyani 5
+kumar 5
+kumar 5
 null 0
 null 0
 alekhya 6
-manasa 0
-kumar 0
-karthik 0
-manohar 0
-swetha 0
-reddy 0
+manasa 5
+kumar 5
+karthik 5
+manohar 5
+swetha 5
+reddy 5
 null 0
 ----------------------------------------
 
