@@ -28,9 +28,9 @@ public class Hotel{
 		if (rooms[roomNumber-1] != null) {
 			return false;
 		}else{
-			rooms[roomNumber-1] = new Reservation(person);
-			size++;
-			System.out.println(size);
+			// rooms[roomNumber-1] = new Reservation(person);
+			// size++;
+			// System.out.println(size);
 		return true;
 	}
 
