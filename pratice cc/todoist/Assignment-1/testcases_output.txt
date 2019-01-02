@@ -30,12 +30,12 @@ Your Output:
 taskb, ram, 10, Not Important, Urgent, dud
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Invalid timeToComplete -1
 
 Your Output: 
-Invalid timeToComplete-1
+Invalid timeToComplete -1
 ----------------------------------------
 
 ########## Testcase 5: Passed ##########
