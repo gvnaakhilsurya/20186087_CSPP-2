@@ -50,11 +50,23 @@ class Task{
 	     public void setUrgent(boolean urgent){
 	      this.urgent = urgent;
 	     }
+	     public String Isimportant(boolean flag){
+	     	if (flag == true) {
+	     		return "Important";
+	     	}
+	     	return "Not Important";
+	     }
+	     public String Isurgent(boolean flag){
+	     	if (flag == true) {
+	     		return "Urgent";
+	     	}
+	     	return "Not Urgent";
+	     }
 
 	     public String toString(){
 	     	String str = "";
 	     	str = this.title + ", "+this.assignedTo + ", "+this.timeTocomplete+
-	     	", "+this.important+", "+this.urgent+", "+this.status;
+	     	", "+Isimportant(this.important)+", "+Isurgent(this.urgent)+", "+this.status;
 	     	return str;
 	     }
 }

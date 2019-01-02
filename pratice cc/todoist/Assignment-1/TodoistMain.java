@@ -67,6 +67,9 @@ public class TodoistMain {
     public static void testTask(final String[] tokens) {
         try {
             System.out.println(createTask(tokens));
+            // if (tokens[4].equals("y")) {
+            //     System.out.println("important");
+            // }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
