@@ -255,5 +255,8 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:95:36: '4' is a magic number. [MagicNumber]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:96:33: '5' is a magic number. [MagicNumber]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:97:32: '6' is a magic number. [MagicNumber]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:98:36: '&&' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:98:65: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:99:50: '+' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 12 errors.
