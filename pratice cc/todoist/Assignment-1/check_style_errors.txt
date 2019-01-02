@@ -207,8 +207,12 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:15:61: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:18:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:18:43: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:22:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:22:33: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:24:32: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\Todoist.java:24:53: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]

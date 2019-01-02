@@ -19,6 +19,14 @@ class Todoist{
 		return 0;
 
 	}
+	public String toString(){
+		String str = "";
+		for (int i = 0;i < taskslist.size();i++) {
+			str += taskslist.get(i);
+		}
+		return str;
+	}
+
 
 
 }

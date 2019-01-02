@@ -53,7 +53,7 @@ task2, manoj, 10, Not Important, Not Urgent, done
 taska, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Todoist@3f3afe78
+
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -81,7 +81,7 @@ task-x, manoj, 10, Not Important, Not Urgent, done
 task-z, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Todoist@3f3afe78
+
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
