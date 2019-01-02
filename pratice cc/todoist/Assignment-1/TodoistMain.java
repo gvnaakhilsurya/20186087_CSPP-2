@@ -84,11 +84,14 @@ public class TodoistMain {
     public static Task createTask(final String[] tokens) throws Exception {
 
         String title = tokens[1];
-        if (title == null) {
+        if (title.equals("")) {
             throw new Exception("Title not provided");
         }
         String assignedTo = tokens[2];
         int timeToComplete = Integer.parseInt(tokens[3]);
+        if (timeToComplete < 0) {
+            throw new Exception("Invalid timeToComplete -1");
+        }
         boolean important = tokens[4].equals("y");
         boolean urgent = tokens[5].equals("y");
         String status = tokens[6];

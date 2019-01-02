@@ -213,8 +213,8 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:91:54: '3' is a magic number. [MagicNumber]
-[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:92:36: '4' is a magic number. [MagicNumber]
-[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:93:33: '5' is a magic number. [MagicNumber]
-[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:94:32: '6' is a magic number. [MagicNumber]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:95:36: '4' is a magic number. [MagicNumber]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:96:33: '5' is a magic number. [MagicNumber]
+[ERROR] H:\20186087_CSPP-2\pratice cc\todoist\Assignment-1\TodoistMain.java:97:32: '6' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 6 errors.
