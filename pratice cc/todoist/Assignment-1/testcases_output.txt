@@ -1,25 +1,25 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 task1, akshay, 30, Important, Urgent, todo
 
 Your Output: 
-Invalid statustodo
+task1, akshay, 30, Important, Urgent, todo
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 task2, manoj, 10, Not Important, Not Urgent, done
 
 Your Output: 
-Invalid statusdone
+task2, manoj, 10, Not Important, Not Urgent, done
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 taska, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Invalid statustodo
+taska, tarun, 120, Important, Not Urgent, todo
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -46,19 +46,19 @@ Your Output:
 Title not provided
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 task1, akshay, 30, Important, Urgent, todo
 task2, manoj, 10, Not Important, Not Urgent, done
 taska, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
+task1, akshay, 30, Important, Urgent, todo
+task2, manoj, 10, Not Important, Not Urgent, done
+taska, tarun, 120, Important, Not Urgent, todo
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 task-1, akshay, 30, Important, Urgent, todo
 task-2, manoj, 10, Not Important, Not Urgent, done
@@ -83,27 +83,27 @@ task-x, manoj, 10, Not Important, Not Urgent, done
 task-z, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
+task-1, akshay, 30, Important, Urgent, todo
+task-2, manoj, 10, Not Important, Not Urgent, done
+task-a, tarun, 120, Important, Not Urgent, todo
+task-b, akshay, 30, Important, Urgent, todo
+task-c, manoj, 10, Not Important, Not Urgent, done
+task-p, tarun, 120, Important, Not Urgent, todo
+task-q, akshay, 30, Important, Urgent, todo
+task-r, manoj, 10, Not Important, Not Urgent, done
+task-s, tarun, 120, Important, Not Urgent, todo
+task-9, akshay, 30, Important, Urgent, todo
+task-8, manoj, 10, Not Important, Not Urgent, done
+task-7, tarun, 120, Important, Not Urgent, todo
+task-6, akshay, 30, Important, Urgent, todo
+task-7, manoj, 10, Not Important, Not Urgent, done
+task-4, tarun, 120, Important, Not Urgent, todo
+task-3, akshay, 30, Important, Urgent, todo
+task-t, manoj, 10, Not Important, Not Urgent, done
+task-e, tarun, 120, Important, Not Urgent, todo
+task-h, akshay, 30, Important, Urgent, todo
+task-x, manoj, 10, Not Important, Not Urgent, done
+task-z, tarun, 120, Important, Not Urgent, todo
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -113,15 +113,6 @@ null
 task-h, tarun, 27, Important, Not Urgent, todo
 
 Your Output: 
-Invalid statustodo
-Invalid statusdone
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
 null
 null
 null
@@ -133,15 +124,6 @@ task-j1, john, 30, Important, Not Urgent, todo
 task-ta, tom, 120, Important, Not Urgent, todo
 
 Your Output: 
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
 null
 null
 ----------------------------------------
@@ -152,65 +134,30 @@ Expected Output:
 [task-tp, tom, 120, Important, Not Urgent, todo, task-th, tom, 27, Important, Not Urgent, todo, null]
 
 Your Output: 
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
+
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 337
 
 Your Output: 
-Invalid statustodo
-Invalid statusdone
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statusdone
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-0
+337
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 0
 
 Your Output: 
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
-Invalid statusdone
 0
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 487
 
 Your Output: 
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-Invalid statustodo
-0
+487
 ----------------------------------------
 
