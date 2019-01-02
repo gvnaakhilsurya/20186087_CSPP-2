@@ -31,15 +31,11 @@ class Todoist{
 		}
 		return null;
 	}
-	// public Task[] getNextTask(String task_title,int tt_tasks){
-	// 	Task[]result = new Task[tt_tasks];
+	public Task[] getNextTask(String task_title,int tt_tasks){
+		Task[]result = new Task[tt_tasks];
+		return null;
 
-
-
-
-		
-		
-	// }
+	}
 	public int  totalTime4Completion(){
 		int result = 0;
 		for (int i = 0;i < size ;i++) {
