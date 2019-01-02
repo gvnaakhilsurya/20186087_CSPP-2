@@ -3,24 +3,7 @@ Expected Output:
 task1, akshay, 30, Important, Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+task1, akshay, 30, true, true, todo
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,24 +11,7 @@ Expected Output:
 task2, manoj, 10, Not Important, Not Urgent, done
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+task2, manoj, 10, false, false, done
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -53,24 +19,7 @@ Expected Output:
 taska, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+taska, tarun, 120, true, false, todo
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -78,24 +27,7 @@ Expected Output:
 Invalid status dud
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+taskb, ram, 10, false, true, dud
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -103,24 +35,7 @@ Expected Output:
 Invalid timeToComplete -1
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+taskb, ram, -1, true, true, todo
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -128,24 +43,7 @@ Expected Output:
 Title not provided
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+, ram, 1, true, true, todo
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -155,24 +53,7 @@ task2, manoj, 10, Not Important, Not Urgent, done
 taska, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+Todoist@3f3afe78
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -200,24 +81,7 @@ task-x, manoj, 10, Not Important, Not Urgent, done
 task-z, tarun, 120, Important, Not Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+Todoist@3f3afe78
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -227,24 +91,9 @@ null
 task-h, tarun, 27, Important, Not Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+null
+null
+null
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -253,24 +102,8 @@ task-j1, john, 30, Important, Not Urgent, todo
 task-ta, tom, 120, Important, Not Urgent, todo
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+null
+null
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -279,24 +112,8 @@ Expected Output:
 [task-tp, tom, 120, Important, Not Urgent, todo, task-th, tom, 27, Important, Not Urgent, todo, null]
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+null
+null
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -304,49 +121,15 @@ Expected Output:
 337
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+0
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 0
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+0
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -354,23 +137,6 @@ Expected Output:
 487
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: ListInterface
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:801)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:699)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:622)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	at Todoist.<init>(Todoist.java:5)
-	at TodoistMain.startTest(TodoistMain.java:17)
-	at TodoistMain.main(TodoistMain.java:101)
-Caused by: java.lang.ClassNotFoundException: ListInterface
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 12 more
+0
 ----------------------------------------
 
