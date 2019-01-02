@@ -27,8 +27,10 @@ class Todoist{
 		for (int i = 0;i < size;i++) {
 			if ((task_title.equals(taskslist.get(i).getTitle()))&&(taskslist.get(i).getStatus().equals("todo"))){
 				if(((taskslist.get(i).Isimportant(taskslist.get(i).getImportant()).equals("Important")))
-					&&(taskslist.get(i).Isurgent(taskslist.get(i).getUrgent()).equals("Not Urgent")))
-				return taskslist.get(i);
+					&&(taskslist.get(i).Isurgent(taskslist.get(i).getUrgent()).equals("Not Urgent"))){
+					
+					return taskslist.get(i);
+				}
 			}
 		}
 		return null;
