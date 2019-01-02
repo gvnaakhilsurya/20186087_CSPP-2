@@ -11,21 +11,42 @@ class Todoist{
 		taskslist.add(task);
 		size++;
 	}
+	public boolean IsTitlematched(String task_title){
+		for (int i = 0;i < size;i++) {
+			if ((task_title.equals(taskslist.get(i).getAssignedTo()))){
+				return true;
+			}
+		}
+		return false;
+	}
+	public boolean IsUrgent(String task_title){
+		return false;
+	}
 
 	public Task getNextTask(String task_title){
 		for (int i = 0;i < size;i++) {
-			if (task_title.equals(taskslist.get(i).getTitle())) {
+			if ((task_title.equals(taskslist.get(i).getTitle()))){
 				return taskslist.get(i);
 			}
 		}
 		return null;
 	}
-	public Task[] getNextTask(String task_title,int tt_tasks){
-		return null;
+	// public Task[] getNextTask(String task_title,int tt_tasks){
+	// 	Task[]result = new Task[tt_tasks];
+
+
+
+
 		
-	}
+		
+	// }
 	public int  totalTime4Completion(){
-		return 0;
+		int result = 0;
+		for (int i = 0;i < size ;i++) {
+			result += taskslist.get(i).getTimeTocomplete();
+		}
+		return result;
+		
 
 	}
 	public String toString(){

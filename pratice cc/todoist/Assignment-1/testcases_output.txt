@@ -134,8 +134,7 @@ Expected Output:
 [task-tp, tom, 120, Important, Not Urgent, todo, task-th, tom, 27, Important, Not Urgent, todo, null]
 
 Your Output: 
-null
-null
+
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -143,22 +142,22 @@ Expected Output:
 337
 
 Your Output: 
-0
+487
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 0
 
 Your Output: 
-0
+487
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 487
 
 Your Output: 
-0
+487
 ----------------------------------------
 
