@@ -25,17 +25,19 @@ class Todoist{
 
 	public Task getNextTask(String task_title){
 		for (int i = 0;i < size;i++) {
-			if ((task_title.equals(taskslist.get(i).getTitle()))){
+			if ((task_title.equals(taskslist.get(i).getTitle()))&&(taskslist.get(i).getStatus().equals("todo"))){
+				if(((taskslist.get(i).Isimportant(taskslist.get(i).getImportant()).equals("Important")))
+					&&(taskslist.get(i).Isurgent(taskslist.get(i).getUrgent()).equals("Not Urgent")))
 				return taskslist.get(i);
 			}
 		}
 		return null;
 	}
-	public Task[] getNextTask(String task_title,int tt_tasks){
-		Task[]result = new Task[tt_tasks];
-		return null;
+	// public Task[] getNextTask(String task_title,int tt_tasks){
+	// 	Task[]result = new Task[tt_tasks];
+	// 	return null;
 
-	}
+	// }
 	public int  totalTime4Completion(){
 		int result = 0;
 		for (int i = 0;i < size ;i++) {
