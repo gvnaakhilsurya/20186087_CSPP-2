@@ -67,9 +67,6 @@ public class TodoistMain {
     public static void testTask(final String[] tokens) {
         try {
             System.out.println(createTask(tokens));
-            // if (tokens[4].equals("y")) {
-            //     System.out.println("important");
-            // }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -85,7 +82,11 @@ public class TodoistMain {
      * @throws     Exception  if task inputs are invalid
      */
     public static Task createTask(final String[] tokens) throws Exception {
+
         String title = tokens[1];
+        if (title == null) {
+            throw new Exception("Title not provided");
+        }
         String assignedTo = tokens[2];
         int timeToComplete = Integer.parseInt(tokens[3]);
         boolean important = tokens[4].equals("y");
