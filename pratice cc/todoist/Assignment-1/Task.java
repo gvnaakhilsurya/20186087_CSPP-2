@@ -50,6 +50,13 @@ class Task{
 	     public void setUrgent(boolean urgent){
 	      this.urgent = urgent;
 	     }
+	      public String getStatus(){
+	       return status;
+	      }
+	      
+	      public void setStatus(String status){
+	       this.status = status;
+	      }
 	     public String Isimportant(boolean flag){
 	     	if (flag == true) {
 	     		return "Important";

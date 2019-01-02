@@ -43,11 +43,11 @@ class Todoist{
 	public int  totalTime4Completion(){
 		int result = 0;
 		for (int i = 0;i < size ;i++) {
-			result += taskslist.get(i).getTimeTocomplete();
+			if (taskslist.get(i).getStatus().equals("todo")) {
+				result += taskslist.get(i).getTimeTocomplete();
+			}
 		}
 		return result;
-		
-
 	}
 	public String toString(){
 		String str = "";
