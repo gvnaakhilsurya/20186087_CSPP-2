@@ -31,7 +31,7 @@ class Todoist{
 	public String toString(){
 		String str = "";
 		for (int i = 0;i < taskslist.size();i++) {
-			str += taskslist.get(i);
+			str += taskslist.get(i) +"\n";
 		}
 		return str;
 	}
