@@ -1,0 +1,8 @@
+[master b35355c] "cspp2_m10_a1_01: 6/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 5 files changed, 64 insertions(+), 21 deletions(-)
+ rewrite result/score.json (81%)
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
