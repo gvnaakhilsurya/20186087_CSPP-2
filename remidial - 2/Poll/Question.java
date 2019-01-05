@@ -1,6 +1,10 @@
+import java.util.*;
 class Question{
 	String question;
 	String[]options;
+	Hashtable<String,Integer> h;
+
+
 
 	public Question(String question,String[]options){
 		this.question = question;
@@ -13,7 +17,7 @@ class Question{
 	 }
 	 
 	 public void setQuestion(String question){
-	  this.question = question;
+	 
 	 }
 	  public String[] getOptions(){
 	   return options;
@@ -23,19 +27,34 @@ class Question{
 	   this.options = options;
 	  }
 
-	  public void setOptionVotes(String option){
-
+	  public void setOptionVotes(int optionnum){
+	  	ArrayList<Integer>result = new ArrayList<Integer>();
+	  	int i = 1;
+	  	if (result.get(optionnum)==0) {
+	  		result.add(optionnum,i);
+	  	}else{
+	  		result.add(optionnum,i++);
+	  	}
+	  	
 	  }
-	  public String indexOf(String option){
-	  	return null;
+	  public int indexOf(String option){
+	  	for (int i = 0;i < options.length;i++) {
+	  		if (option.equals(options[i])) {
+	  			return i;
+	  		}
+	  	}
+	  	return -1;
+	  	
 	  }
 	  public String getText(){
-	  	return null;
+	  	return this.question;
 
 	  }
-	  public int commonSelectedOption(){
+	  public String commonSelectedOption(){
+	  	return null;
+	 
+	  	
 
-	  	return 0;
 	  }
 
 }

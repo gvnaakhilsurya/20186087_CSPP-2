@@ -1,0 +1,45 @@
+warning: LF will be replaced by CRLF in remidial - 2/Poll/Solution.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/input000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/input001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/input002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/output000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in remidial - 2/Poll/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+[master 419472d] "cspp2_m10_a1_1: 0/3 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 26 files changed, 384 insertions(+)
+ create mode 100644 remidial - 2/Poll/CSPP2 Remedial Exam-2.pdf
+ create mode 100644 remidial - 2/Poll/Participant.class
+ create mode 100644 remidial - 2/Poll/Participant.java
+ create mode 100644 remidial - 2/Poll/Question.class
+ create mode 100644 remidial - 2/Poll/Question.java
+ create mode 100644 remidial - 2/Poll/Quiz.class
+ create mode 100644 remidial - 2/Poll/Quiz.java
+ create mode 100644 remidial - 2/Poll/Solution.class
+ create mode 100644 remidial - 2/Poll/Solution.java
+ create mode 100644 remidial - 2/Poll/check_style_errors.txt
+ create mode 100644 remidial - 2/Poll/git_output.txt
+ create mode 100644 remidial - 2/Poll/md5/input000.txt
+ create mode 100644 remidial - 2/Poll/md5/input001.txt
+ create mode 100644 remidial - 2/Poll/md5/input002.txt
+ create mode 100644 remidial - 2/Poll/md5/output000.txt
+ create mode 100644 remidial - 2/Poll/md5/output001.txt
+ create mode 100644 remidial - 2/Poll/md5/output002.txt
+ create mode 100644 remidial - 2/Poll/md5/problem_id.txt
+ create mode 100644 remidial - 2/Poll/testcases/input000.txt
+ create mode 100644 remidial - 2/Poll/testcases/input001.txt
+ create mode 100644 remidial - 2/Poll/testcases/input002.txt
+ create mode 100644 remidial - 2/Poll/testcases/output000.txt
+ create mode 100644 remidial - 2/Poll/testcases/output001.txt
+ create mode 100644 remidial - 2/Poll/testcases/output002.txt
+ create mode 100644 remidial - 2/Poll/testcases/problem_id.txt
+ create mode 100644 remidial - 2/Poll/testcases_output.txt
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/gvnaakhilsurya/20186087_CSPP-2.git
+   7821f70..419472d  master -> master

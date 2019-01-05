@@ -9,9 +9,21 @@ class Quiz{
 
 	}
 	public void addQuestion(Question question){
+		for (int i = 0;i <list.length;i++) {
+			if (list[i]==null) {
+				list[i] = question;
+				listsize++;
+				break;
+			}
+			
+		}
 
 	}
+	public int size(){
+		return listsize;
+	}
 	public Question getQuestion(int quesno){
-		return null;
+		 return list[quesno];
+
 	}
 }

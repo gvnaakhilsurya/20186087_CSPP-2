@@ -2,6 +2,7 @@ class Participant{
 	private String name;
 	private int option;
 	private String optedname;
+	private String[] participants_choice;
 
 	public Participant(String name,int option,String optedname){
 		this.name = name;
@@ -30,4 +31,5 @@ class Participant{
 	   public void setOptedname(String optedname){
 	    this.optedname = optedname;
 	   }
+	  
 }
