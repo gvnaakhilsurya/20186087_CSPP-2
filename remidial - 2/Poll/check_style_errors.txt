@@ -82,15 +82,6 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:30:11: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:30:38: Parameter optionnum should be final. [FinalParameters]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:30:52: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:31:35: '>' is followed by an illegal character. [GenericWhitespace]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:33:42: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:33:44: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:34:46: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:35:18: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:35:18: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:35:22: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:35:22: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:36:46: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:38: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:40:11: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:40:30: Parameter option should be final. [FinalParameters]
@@ -105,7 +96,7 @@ Starting audit...
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:55: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Question.java:56: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 60 errors.
+Checkstyle ends with 51 errors.
 Starting audit...
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Quiz.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_CSPP-2\remidial - 2\Poll\Quiz.java:1: Missing a Javadoc comment. [JavadocType]

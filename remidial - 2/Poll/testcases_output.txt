@@ -3,14 +3,7 @@ Expected Output:
 Highest number of votes for question : Who should be the next Prime Minister? : NarendraModi
 
 Your Output: 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:440)
-	at Question.setOptionVotes(Question.java:33)
-	at Solution.main(Solution.java:26)
+Highest number of votes for question : Who should be the next Prime Minister? : null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -20,14 +13,9 @@ Highest number of votes for question : Who will be the next cm for Telangana? : 
 Highest number of votes for question : Who will be the next cm for AP? : CBN
 
 Your Output: 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:440)
-	at Question.setOptionVotes(Question.java:33)
-	at Solution.main(Solution.java:26)
+Highest number of votes for question : Who should be the next Prime Minister? : null
+Highest number of votes for question : Who will be the next cm for Telangana? : null
+Highest number of votes for question : Who will be the next cm for AP? : null
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -37,13 +25,8 @@ Highest number of votes for question : Who will be the next cm for Telangana? : 
 Highest number of votes for question : Who will be the next cm for AP? : CBN
 
 Your Output: 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:440)
-	at Question.setOptionVotes(Question.java:33)
-	at Solution.main(Solution.java:26)
+Highest number of votes for question : Who should be the next Prime Minister? : null
+Highest number of votes for question : Who will be the next cm for Telangana? : null
+Highest number of votes for question : Who will be the next cm for AP? : null
 ----------------------------------------
 

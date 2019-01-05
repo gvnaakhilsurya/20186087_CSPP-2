@@ -28,13 +28,13 @@ class Question{
 	  }
 
 	  public void setOptionVotes(int optionnum){
-	  	ArrayList<Integer>result = new ArrayList<Integer>();
-	  	int i = 1;
-	  	if (result.get(optionnum)==0) {
-	  		result.add(optionnum,i);
-	  	}else{
-	  		result.add(optionnum,i++);
-	  	}
+	  	// ArrayList<Integer>result = new ArrayList<Integer>();
+	  	// int i = 1;
+	  	// if (result.get(optionnum)==0) {
+	  	// 	result.add(optionnum,i);
+	  	// }else{
+	  	// 	result.add(optionnum,i++);
+	  	// }
 	  	
 	  }
 	  public int indexOf(String option){
