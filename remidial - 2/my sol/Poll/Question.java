@@ -28,14 +28,14 @@ class Question{
 	  public void setOptionVotes(int option){
 	  	int count=0;
   		// System.out.println(this.options[option]);
-  		System.out.println((ht.containsKey(this.options[option])));
+  		// System.out.println((ht.containsKey(this.options[option])));
 		if (ht.containsKey(this.options[option])) {
 			count = ht.get((this.options[option]));
 			ht.put(this.options[option], count+1);
 		} else {
 			ht.put(this.options[option], 1);
 		}
-		System.out.println(ht);
+		// System.out.println(ht);
 
 	  }
 	  public int indexOf(String option){
