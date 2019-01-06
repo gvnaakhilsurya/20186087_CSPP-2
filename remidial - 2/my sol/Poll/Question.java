@@ -2,7 +2,7 @@ import java.util.*;
 class Question{
 	String question;
 	String[]options;
-	Hashtable<String,Integer>ht;
+	Hashtable<String,Integer> ht = new Hashtable<String,Integer>();
 	
 	public Question(String question,String[]options){
 		this.question = question;
@@ -26,15 +26,17 @@ class Question{
 	  }
 
 	  public void setOptionVotes(int option){
-	  	ht = new Hashtable<String,Integer>();
-	  	for(int i = 0; i < this.options.length;i++) {
-			if (ht.contains(this.options[option])) {
-				int count = ht.get((this.options[option]));
-				ht.put(this.options[option], count+1);
-			} else {
-				ht.put(this.options[option], 1);
-			}
+	  	int count=0;
+  		// System.out.println(this.options[option]);
+  		System.out.println((ht.containsKey(this.options[option])));
+		if (ht.containsKey(this.options[option])) {
+			count = ht.get((this.options[option]));
+			ht.put(this.options[option], count+1);
+		} else {
+			ht.put(this.options[option], 1);
 		}
+		System.out.println(ht);
+
 	  }
 	  public int indexOf(String option){
 	  	for (int i = 0;i < options.length;i++) {
@@ -56,8 +58,9 @@ class Question{
 		     if(entry.getValue() > maxValue) {
 		         maxValue = entry.getValue();
 		         maxKey = entry.getKey();
+		         // System.out.println(maxValue);
 		     }
-
+		     
 		}
 		return maxKey;
 
