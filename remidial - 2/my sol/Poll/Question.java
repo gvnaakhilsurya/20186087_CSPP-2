@@ -51,11 +51,13 @@ class Question{
 	  }
 	  public String commonSelectedOption(){
 		String maxKey=null;
-		Integer maxValue = Integer.MIN_VALUE; 
+		Integer maxValue = Integer.MAX_VALUE; 
 		for(Map.Entry<String,Integer> entry : ht.entrySet()) {
 		     if(entry.getValue() > maxValue) {
+		         maxValue = entry.getValue();
 		         maxKey = entry.getKey();
 		     }
+
 		}
 		return maxKey;
 
