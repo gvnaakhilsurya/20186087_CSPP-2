@@ -1,0 +1,31 @@
+************* Module Solution
+Solution.py:14:35: C0326: Exactly one space required after comma
+        quesObj = Question(question,options)
+                                   ^ (bad-whitespace)
+Solution.py:22:38: C0326: Exactly one space required after comma
+            parsObj = Participant(name,q-1,lines[1])
+                                      ^ (bad-whitespace)
+Solution.py:22:42: C0326: Exactly one space required after comma
+            parsObj = Participant(name,q-1,lines[1])
+                                          ^ (bad-whitespace)
+Solution.py:27:0: C0301: Line too long (141/100) (line-too-long)
+Solution.py:39:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:1:0: W0401: Wildcard import Quiz (wildcard-import)
+Solution.py:2:0: W0401: Wildcard import Participant (wildcard-import)
+Solution.py:3:0: W0401: Wildcard import Question (wildcard-import)
+Solution.py:4:0: C0103: Function name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:8:4: C0103: Variable name "quesObj" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:12:8: W0621: Redefining name 'i' from outer scope (line 10) (redefined-outer-name)
+Solution.py:14:8: C0103: Variable name "quesObj" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:19:8: W0621: Redefining name 'i' from outer scope (line 17) (redefined-outer-name)
+Solution.py:21:12: C0103: Variable name "q" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:22:12: C0103: Variable name "parsObj" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:23:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:22:12: W0612: Unused variable 'parsObj' (unused-variable)
+Solution.py:29:0: C0111: Missing function docstring (missing-docstring)
+
+-----------------------------------
+Your code has been rated at 3.10/10
+

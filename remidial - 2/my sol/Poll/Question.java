@@ -2,7 +2,7 @@ import java.util.*;
 class Question{
 	String question;
 	String[]options;
-	Hashtable<String,Integer> ht = new Hashtable<String,Integer>();
+	Hashtable<String,Integer> ht= new Hashtable<String,Integer>();
 	
 	public Question(String question,String[]options){
 		this.question = question;
