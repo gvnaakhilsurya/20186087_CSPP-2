@@ -1,0 +1,76 @@
+####Problem Description
+CSV Reader:
+
+# Methods:
+Constructor : CSVReader(String) : Takes a String as parameter
+int rowCount() : Returns an int giving the number of rows present in csv excluding header row
+int fieldCount() : Returns an int giving the number of fields present in csv
+String getFieldName(int) : Takes an int index (field number) as parameter and returns the name of the field
+String getRow(int) : Takes an int index (row number) as parameter and returns the row
+
+Note: 0th row is header row. getRow(0) should return Row Not Found Exception instead of header row
+
+####################### DON'T DELETE .CLASS FILES. DON'T CHANGE ANY FILENAMES ########################
+
+#Follow these instructions to start writing code
+1) Understand the question properly 
+2) Implement the above functionality in Java and check if the testcases are passed.
+3) To build your program, open filepath in Command Prompt and compile, 
+   "javac CSVReader.java" (or) CTRL+B in Sublime Text Editor
+   To see the result of your program:
+   "java CSVReader"
+   To run Test Cases:
+   "java TestRunner"
+
+####Test Cases: 
+Testcase #1:
+	 CSVReader csv = new CSVReader("date,l_ipn,r_asn,f\n
+									2006-07-01,0,701,1\n
+									2006-07-01,0,714,1\n
+									2006-07-01,0,1239,1\n
+									2006-07-01,0,1680,1\n
+									2006-07-01,0,2514,1\n
+									2006-07-01,0,3320,1\n
+									2006-07-01,0,3561,13\n
+									2006-07-01,0,4134,3\n
+									2006-07-01,0,5617,2\n
+									2006-07-01,0,6478,1\n")
+
+	Input: #1 - csv.rowCount()
+	Output: 10
+	Input: #2 - csv.fieldCount()
+	Output: 4
+	Input: #3 - csv.getFieldName(0)
+	Output: "date"
+	Input: #4 - csv.getFieldName(1)
+	Output: "l_ipn"
+	Input: #5 - csv.getFieldName(2)
+	Output: "r_asn"
+	Input: #6 - csv.getFieldName(3)
+	Output: "f"
+	Input: #7 - csv.getFieldName(4)
+	Output: "Field Not Found Exception
+	Input: #8 - csv.getRow(5)
+	Output: "date = 2006-07-01\nl_ipn = 0\nr_asn = 2514\nf = 1
+	Input: #9 - csv.getRow(100)
+	Output: "Row Not Found Exception
+	Input: #10 - csv.getRow(10)
+	Output: "date = 2006-07-01\nl_ipn = 0\nr_asn = 6478\nf = 1"
+ 	Input: #11 - csv.getRow(11)
+ 	Output: "Row Not Found Exception
+ 	Input: #12 - csv.getRow(0)
+ 	Output: "Row Not Found Exception
+ 	Input: #13 - csv.getRow(-1)
+ 	Output: "Row Not Found Exception
+
+Testcase #2:
+	CSVReader csv = new CSVReader("")
+
+	Input: #1 - csv.rowCount()
+	Output: 0, csv.rowCount());
+	Input: #2 - csv.fieldCount()
+	Output: 0, csv.fieldCount());
+	Input: #3 - csv.getFieldName(4)
+	Output: "Field Not Found Exception
+	Input: #4 - csv.getRow(5)
+	Output: "Row Not Found Exception        

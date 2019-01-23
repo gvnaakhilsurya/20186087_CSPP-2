@@ -1,0 +1,15 @@
+date,l_ipn,r_asn,fq2006-07-01,0,701,1q2006-07-01,0,714,1q2006-07-01,0,1239,1q2006-07-01,0,1680,1q2006-07-01,0,2514,1q2006-07-01,0,3320,1q2006-07-01,0,3561,13q2006-07-01,0,4134,3q2006-07-01,0,5617,2q2006-07-01,0,6478,1
+13
+rowCount
+fieldCount
+getFieldName 0
+getFieldName 1
+getFieldName 2
+getFieldName 3
+getFieldName 4
+getRow 5
+getRow 100
+getRow 10
+getRow 11
+getRow 0
+getRow -1

@@ -1,0 +1,6 @@
+
+4
+rowCount
+fieldCount
+getFieldName 4
+getRow 5

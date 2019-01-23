@@ -1,0 +1,19 @@
+10
+4
+date
+l_ipn
+r_asn
+f
+Field Not Found Exception
+date = 2006-07-01
+l_ipn = 0
+r_asn = 2514
+f = 1
+Row Not Found Exception
+date = 2006-07-01
+l_ipn = 0
+r_asn = 6478
+f = 1
+Row Not Found Exception
+Row Not Found Exception
+Row Not Found Exception
