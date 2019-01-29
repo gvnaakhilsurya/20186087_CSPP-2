@@ -38,14 +38,14 @@ public class User {
 			if (wallet[i].getName().equals(name)) {
 				if (wallet[i].getAmount() < amount) {
 					System.out.println("Insufficient funds");
-					break;
 				}
 				if (amount < 0) {
 					System.out.println("Negative amount");
-					break;
+
 				}
 
 			}
+			return;
 		}
 
 			int x = 0;
