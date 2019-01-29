@@ -2,7 +2,6 @@ public class User {
 	String name;
 	Wallet[] wallet;
 	int size;
-	int newamount = 1000;
 	public User(int num) {
 		this.name = name;
 		wallet = new Wallet[num];
@@ -15,7 +14,6 @@ public class User {
 		for (int i = 0; i < wallet.length; i++) {
 			if (wallet[i] == null) {
 				wallet[i] = obj;
-				wallet[i].setAmount(newamount);
 				size++;
 				break;
 			}
@@ -28,7 +26,6 @@ public class User {
 				if (amount < 0) {
 					System.out.println("Negative amount");
 				}
-				// System.out.println(wallet[i].getAmount());
 				x = wallet[i].getAmount() + amount;
 				wallet[i].setAmount(x);
 				break;
@@ -50,7 +47,7 @@ public class User {
 
 			}
 		}
-		if(flag != true){
+
 			int x = 0;
 			for (int i = 0; i < size; i++) {
 				if (wallet[i].getName().equals(name)) {
@@ -60,7 +57,6 @@ public class User {
 				}
 			}
 
-		}
 	}
 	public void balance(String name) {
 		for (int i = 0; i < size; i++) {
