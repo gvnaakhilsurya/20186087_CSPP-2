@@ -1,6 +1,6 @@
 public class Wallet {
 	String name;
-	int amount = 1000;
+	int amount;
 	Wallet() {
 		
 	}
