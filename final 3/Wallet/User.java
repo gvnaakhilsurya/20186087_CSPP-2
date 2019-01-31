@@ -11,14 +11,25 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void addWallet(Wallet wallet) {
+	// public void addWallet(Wallet wallet) {
+	// 	for (int i = 0; i < warray.length; i++) {
+	// 		if (warray[i] == null) {
+	// 			warray[i] = wallet;
+	// 			wsize++;
+	// 			break;
+	// 		}
+	// 	}
+	// }
+	public void addWallet(String wname){
 		for (int i = 0; i < warray.length; i++) {
 			if (warray[i] == null) {
-				warray[i] = wallet;
+				warray[i] = new Wallet(wname,1000);
 				wsize++;
 				break;
+
 			}
 		}
+
 	}
 	public void credit(String name, int amount) {
 		

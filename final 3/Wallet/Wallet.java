@@ -2,10 +2,11 @@ public class Wallet {
 	String name;
 	int amount = 1000;
 	Wallet() {
-		this.amount = 1000;
+		
 	}
-	Wallet(String name) {
+	Wallet(String name,int amount) {
 		this.name = name;
+		this.amount =amount;
 	}
 	public String getName() {
 		return this.name;

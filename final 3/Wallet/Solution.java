@@ -10,8 +10,7 @@ public class Solution {
 		User u = new User(num);
 		u.setName(name);
 		for (int i = 0; i < num; i++) {
-			u.addWallet(new Wallet(s.nextLine()));
-
+			u.addWallet((s.nextLine()));
 		}
 		c = 0;
 		int flag = 0;
